@@ -1,0 +1,41 @@
+<html>
+	<script>
+		function checkLogin()
+		{
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			if(username == 'admin' && password == 'admin')
+			{
+				document.write("<a href='http://www.google.com' target='_blank'>Click Me</a>");
+			}
+			else
+			{
+				alert('Please Try Again as admin admin');
+				document.getElementById('username').value="";
+				document.getElementById('password').value="";
+				document.getElementById('username').focus();
+			}
+		}	
+	</script>
+	<body>
+	<Center>
+	<br><br><Br><br><br>
+	<div style='border:2px solid black;border-radius:20px;background-color:#F5F5F5;padding:40px;'>
+	<table>
+	<tr>
+		<th colspan='2'></th>
+	</tr>
+	<tr>
+		<td><label>User Name</label></td>
+		<td><input type="text" name="username" id="username"></input></td>
+	</tr>
+	<tr>
+		<td><label>password</label></td>
+		<td><input type="text" name="password" id="password"></input></td>
+	</tr>
+	<tr>
+		<td><button onclick='checkLogin()'>Login</button></td>
+	</tr>
+	</table>
+	</body>
+</html>
