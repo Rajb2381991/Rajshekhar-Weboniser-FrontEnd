@@ -1,19 +1,40 @@
-.navbar
+.navbarSettings
 {
 	background-color: #000;
 	margin-bottom: 0px;
 	border:0px;
 }
-.navbar-nav
+
+.navSettings li
 {
+	margin:20px auto;
 	margin-left: 30px;
+}
+.navbar-default .navbar-nav  .active  a
+{
+	background-color: #000;
+	color: #555;
+}
+.navbar-default .navbar-nav .active a:focus
+{
+	background-color: #FFF;
+}
+.brandSettings
+{
+	margin:20px auto;
 }
 .banner
 {
-	height: 600px;
 	background-color:#777777;
 	padding-top:263px;
 	color:#FFFFFF;
+	padding-bottom:70px;
+	margin-bottom: 60px;
+}
+.bannerContent
+{
+	width:600px;
+	margin:0px auto;
 }
 .banner h2
 {
@@ -22,5 +43,34 @@
 .banner p
 {
 	font-size: 14px;
-
+	line-height: 24px;
+}
+.container li
+{
+	list-style-type: none;
+	
+}
+ul li:first-child
+{
+    padding-bottom: 25px;
+}
+li h2
+{
+	font-size: 18px;
+}
+li p
+{
+	font-size: 14px;
+	color:#5a5a5a;
+	line-height:24px;
+}
+.container ul:nth-child(3)
+{
+	padding-bottom:110px;
+	margin-bottom:60px;
+}
+.container div div:nth-child(2)
+{
+	padding-bottom:80px;
+	margin-bottom:50px;
 }
