@@ -5,6 +5,18 @@
 	border-radius: 0px;
 	border:none;
 }
+.navbarSettings ul li
+{
+	margin-left:30px;
+}
+.navbarSettings ul li a
+{
+	padding-left:0px;
+	padding-right:0px;
+}
+.navbarSettings .dropMenu li{
+	margin-left: 0px;
+}
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus 
 {
 	color:#9d9d9d;
