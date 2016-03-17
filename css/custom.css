@@ -1,0 +1,26 @@
+.navbar
+{
+	background-color: #000;
+	margin-bottom: 0px;
+	border:0px;
+}
+.navbar-nav
+{
+	margin-left: 30px;
+}
+.banner
+{
+	height: 600px;
+	background-color:#777777;
+	padding-top:263px;
+	color:#FFFFFF;
+}
+.banner h2
+{
+	font-size: 18px;
+}
+.banner p
+{
+	font-size: 14px;
+
+}
