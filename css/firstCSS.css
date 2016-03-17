@@ -11,14 +11,13 @@ body,ul,h1,p
 header
 {
 	background-color: black;
-	height: 50px;
 }
 .logo
 {
 	width:140px;
 	height:35px;
 	background-color:#FF8000;
-	margin:5px;
+	margin:7px;
 	display:block;
 }
 .headerLogo
@@ -28,7 +27,7 @@ header
 .headerMenu
 {
 	float: left;
-	margin-top:10px;
+	margin:11px;
 }
 .headerMenu li
 {
@@ -43,6 +42,11 @@ header
 	display:block;
 	color:#aaaaaa;
 	text-decoration: none;
+}
+.container .clear
+{
+	float: :none;
+	clear: both;
 }
 .banner
 {
@@ -143,3 +147,8 @@ footer
 	padding:10px;
 }
 
+.container .clear
+{
+	float: :none;
+	clear: both;
+}
