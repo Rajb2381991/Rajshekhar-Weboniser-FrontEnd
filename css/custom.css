@@ -2,7 +2,7 @@
 {
 	padding:23px;
 	border:none;
-	border-radius:0px;
+	border-radius:0;
 	margin:0;
 }
 .logo a
@@ -76,20 +76,19 @@
 	margin-bottom: 30px;
 }
 
-.productList li:last-child
+.productList li:first-child
 {
-	margin-right: 0;
+	margin-left: 0;
 }
 .productList li
 {
 	list-style-type: none;
 	width:275px;
-	margin-right:150px;
+	margin-left:150px;
 }
 .productList p
 {
 	padding-bottom:15px; 
-	width:250px;
 	margin:0 auto;
 }
 .productList .product1
@@ -156,7 +155,6 @@ div .product3
 
 .lastDeal .dealHeading
 {
-	padding:10px 0;
 	font-size: 22px;
 	margin-bottom: 40px;
 }
@@ -189,35 +187,45 @@ div .product3
 	width:100%;
 	height: 100%;
 }
-.charts
+.chart
 {
 	background-color: #FFF;
-	height: 260px;
+	padding:0 20px;
 }
-.charts ul
+.chart h2
 {
-	padding:13px 20px;
+	margin:0;
 }
-.charts h2
+.chart .charts
 {
-	margin-top:0;
-	padding-top:12px;
-}
-.charts li
-{
-	list-style-type: none;
+	padding:13px 0;
 }
 
-.charts ul li:last-child
-{
-	border:0;
-	margin-bottom:0;
-}
 .charts li
 {
-	margin-bottom:25px;
-	border-bottom:1px solid #d0dce5;
-	
+	font-size: 18px;
+	list-style-type: none;
+	border-bottom: 1px solid #ededed;
+}
+
+.charts li:last-child
+{
+	border:0;
+}
+.charts .item
+{
+	font-size: 18px;
+	line-height: 60px;
+}
+.charts .itemUnit
+{
+	font-size: 22px;
+	color:#ef5a29;
+	line-height: 60px;
+}
+.charts .itemPrice
+{
+	font-size: 30px;
 }
 .products .item
 {
@@ -234,18 +242,6 @@ div .product3
 	line-height: 45px;
 	color:#ef5a29;
 }
-.gallery li
-{
-	list-style-type: none;
-}
-.charts h2
-{
-	font-size: 22px;
-}
-.gallery h2
-{
-	color: #FFF;
-}
 .gallery ul
 {
 	padding: 0;
@@ -254,8 +250,9 @@ div .product3
 .gallery li
 {
 	height: 250px;
+	list-style-type: none;
 }
-.center  h2 a
+.gallery a
 {
    position: absolute;
    font-size: 22px;
@@ -266,25 +263,18 @@ div .product3
    text-decoration: none;
    background-color: rgba(255,255,255,0.7);
 }
-.joinNowBanner
+.offerAmount
 {
+	font-size: 30px;
+}
+.offerText
+{
+	font-size: 24px;
 	background-color: #02b8dc;
 	margin:0 auto;
 	width:100%;
 	margin-bottom: 50px;
 	color:#FFF;
-}
-.joinNowBanner .offerAmount
-{
-	font-size: 30px;
-}
-.joinNowBanner .offerText
-{
-	font-size: 24px;
-}
-.chart,.lastMinuteDeal
-{
-	height: 260px;
 }
 .customButton 
 {
