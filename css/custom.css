@@ -14,13 +14,11 @@ h2{
 h3{
 	font-size: 28px;
 }
-span
-{
+span{
 	font-size: 16px;
 }
 .firstWraper{
 	background-color: #000;
-	z-index: 20000;
 }
 .secondWraper{
 	background-color: #FFF;
@@ -42,7 +40,7 @@ span
 .subMenuRight{
 	float: right;
 }
-.subMenuLeft li,.subMenuRight li
+.subMenu li
 {
 	float: left
 }
@@ -52,14 +50,13 @@ span
 	color: #627588;
 	padding:10px;
 }
-.subMenuLeft a:hover
+.firstWraper a:hover
 {
 	background-color: #000;
 	color: #FFF;
 }
 .subMenuRight a
 {
-	text-decoration: none;
 	display: block;
 	color: #FFF;
 	padding:10px;
@@ -105,7 +102,6 @@ header .container
 	top:0;
 	width:190px;
 	height: 123px;
-	z-index:1000;
 }
 .banner
 {
@@ -406,7 +402,6 @@ input {
 	color: rgb(0,0,0);
 	border: 1px solid #FFF;
 	border-radius: 3px;
-	text-decoration: none;
 	font-family: Myriad Pro Regular;
 }
 .sportsCoursesView .sportsCoursesTitle
