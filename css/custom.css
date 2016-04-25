@@ -19,6 +19,7 @@ span{
 }
 .firstWraper{
 	background-color: #000;
+	z-index: 20000;
 }
 .secondWraper{
 	background-color: #FFF;
@@ -103,6 +104,7 @@ header .container
 	top:0;
 	width:190px;
 	height: 123px;
+	z-index:1000;
 }
 .banner
 {
