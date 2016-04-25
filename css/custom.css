@@ -22,6 +22,7 @@ span{
 	font-family: arial;
 	font-size: 12px;
 	font-weight: 300;
+	position: relative;
 }
 .secondWraper{
 	background-color: #FFF;
@@ -33,7 +34,7 @@ span{
 .subMenuLeft{
 	position: relative;
 	float:left;
-	margin-left:100px;
+	margin-left:82px;
 }
 .subMenuRight{
 	float: right;
@@ -56,9 +57,10 @@ span{
 	color: #627588;
 	padding:10px;
 }
-.firstWraper a:hover
+.firstWraper ul a:hover
 {
 	color: #FFF;
+	background-color: #000;
 }
 .subMenuRight a
 {
@@ -98,10 +100,6 @@ span{
     font-weight: 600;
     padding:25px 10px;
 }
-.headerMenu li:first-child
-{
-	border-right:1px solid #ededed;
-}
 .headerMenu .clear
 {
 	padding:0;
@@ -110,16 +108,14 @@ span{
 {
 	position: absolute;
 	background-image: url('../img/NFHSLogo.png');
-	left:310px;
-	top:0;
 	width:190px;
 	height: 123px;
 }
 .banner
 {
 	background-image: url('../img/banner.jpg');
-	height: 443px;
 	margin-bottom: 60px;
+	height: 443px;
 }
 .bannerContent
 {
@@ -155,6 +151,7 @@ span{
 	background-color: #004e94;
 	padding:5px 20px;
 	color: #eeeeee;
+	display: inline-block;
 }
 .courseDelieverAndCount h1
 {
@@ -295,6 +292,7 @@ select {
 }
 .nfhsSportsSpecificCourse .viewAll
 {
+	color:#19232d;
 	float: right;
 	line-height: 35px;
 	font-weight: 200;
@@ -309,6 +307,7 @@ select {
 }
 .sportsSpecificCourseList li
 {
+	position: relative;
 	float: left;
 	margin-left: 20px;
 	width: 220px;
@@ -316,6 +315,11 @@ select {
 .sportsSpecificCourseList li:first-child
 {
 	margin-left:0;
+}
+
+.sportsSpecificCourseList li:hover .sportsCoursesView
+{
+	display: block;
 }
 .sportsSpecificCourse
 {
@@ -343,14 +347,9 @@ select {
 }
 .sportsCourseDetails
 {
-	display:inline-block;
 	background-color: #36414a;
     width:100%;
     color:rgb(255,255,255);
-}
-.sportsCourses
-{
-	position: relative;
 }
 .sportsCoursesView
 {
@@ -361,14 +360,6 @@ select {
 	width: 100%;
 	background-color: #000;
 	opacity: 0.8;
-}
-.sportsCoursesView .CoursesView
-{
-	position: relative;
-}
-.sportsCourses:hover .sportsCoursesView
-{
-	display: block;
 }
 .sportsCoursesView .socialConnectList
 {
@@ -505,39 +496,49 @@ select {
 }
 footer
 {
-	padding-top:20px;
+	padding-top:40px;
 	background-color: #19232d;
-}
-.footerSection
-{
-	margin-bottom: 20px;
 }
 .first
 {
 	color: #FFF;
+	font-size: 13px;
 }
 .nav
 {
 	float:left;
+	margin-bottom: 20px;
 }
-.subNav ul a
+.nav>li
+{
+	float: left;
+	padding-left:25px;
+	border-left:1px solid #243340;
+	width:150px;
+	min-height:220px;
+}
+.nav>li:first-child
+{
+	padding:0;
+	width: 85px;
+	border:none;
+}
+.subNav li
+{
+	margin-bottom: 18px;
+}
+.subNav
+{
+	padding-top:20px;
+}
+.subNav a
 {
 	color: #3f5061;
+	font-size: 13px;
 }
 .nav ul:first-child
 {
 	border-left: none;
-}
-.nav .subNav
-{
-	float: left;
-	border-left: 1px solid #3f5061;
-	min-height: 180px;
-	padding:0 23px;
-}
-.subNav li
-{
-	padding-top: 10px;
 }
 .socialMedia .latestTweet
 {
