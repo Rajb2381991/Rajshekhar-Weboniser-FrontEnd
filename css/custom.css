@@ -18,7 +18,10 @@ span{
 	font-size: 16px;
 }
 .firstWraper{
-	background-color: #000;
+	background-color:#19232d;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: 300;
 }
 .secondWraper{
 	background-color: #FFF;
@@ -27,18 +30,21 @@ span{
 	width:940px;
 	margin:0 auto;
 }
-.subMenu{
-	background-color:#19232d;
-	font-family: arial;
-	font-size: 12px;
-	font-weight: 300;
-}
 .subMenuLeft{
+	position: relative;
 	float:left;
 	margin-left:100px;
 }
 .subMenuRight{
 	float: right;
+}
+.subMenuLeft li
+{
+	float: left;
+}
+.subMenuRight li
+{
+	float: left;
 }
 .subMenu li
 {
@@ -52,7 +58,6 @@ span{
 }
 .firstWraper a:hover
 {
-	background-color: #000;
 	color: #FFF;
 }
 .subMenuRight a
@@ -64,12 +69,23 @@ span{
 .headerMenu
 {
 	float: right;
-	width:100%;
+}
+.headerMenu .search
+{
+	background-image: url(../img/magnifyGlass.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 17px;
+	width: 17px;
+}
+.headerMenu li:first-child
+{
+	border-left:1px solid #ededed;
 }
 .headerMenu li
 {
-	float: right;
-	border-left:1px solid #ededed;
+	float:left;
+	border-right:1px solid #ededed;
 }
 .headerMenu li:hover
 {
@@ -90,10 +106,6 @@ span{
 {
 	padding:0;
 }
-header .container
-{
-	position: relative;
-}
 .NFHSLogo
 {
 	position: absolute;
@@ -109,13 +121,9 @@ header .container
 	height: 443px;
 	margin-bottom: 60px;
 }
-.banner .container
-{
-	padding:150px 0 0 90px;
-}
-
 .bannerContent
 {
+	padding: 100px 0 0 90px;
 	width:510px;
 	font-family: arial;
 }
@@ -249,7 +257,14 @@ header .container
 	font-family: Myriad Pro Regular;
 	margin-bottom: 35px;
 }
-input {
+.inputForm
+{
+	float: left;
+}
+.inputForm li{
+	float: left;
+}
+select {
   border: 1px solid #FFF;	
   border-radius: 4px;
   width: 248px;
@@ -257,9 +272,10 @@ input {
   margin-right: 15px;
 }
 .btn {
+  float:left;
   border: 1px solid #004e94;	
   border-radius: 4px;
-  padding:7px 35px;
+  padding:5px 35px 6px;
   color: #eeeeee;
   font-size: 18px;
   background-color: #004e94;
@@ -290,11 +306,6 @@ input {
 	font-family: arial;
 	text-decoration: underline;
 	display: inline-block;
-}
-.nfhsSportsSpecificCourse .clear
-{
-	float: none;
-	clear:both;
 }
 .sportsSpecificCourseList li
 {
@@ -351,40 +362,54 @@ input {
 	background-color: #000;
 	opacity: 0.8;
 }
+.sportsCoursesView .CoursesView
+{
+	position: relative;
+}
 .sportsCourses:hover .sportsCoursesView
 {
 	display: block;
 }
 .sportsCoursesView .socialConnectList
 {
-	position: absolute;
-	bottom: 10px;
-	left:30px;
+	margin:39px 23px;
 }
 .socialConnectList .mail
 {
 	width: 22px;
 	height: 15px;
-	margin-right: 15px;
+	margin-right: 8px;
+	background-image: url(../img/mailSmall.png);
 }
 .socialConnectList .linkedIn
 {
 	width: 17px;
 	height: 19px;
 	margin-right: 15px;
+	background-image: url(../img/linkedIn.png);
 }
 .socialConnectList .facebook
 {
 	width: 12px;
 	height: 19px;
 	margin-right: 15px;
+	background-image: url(../img/facebookSmall.png);
 }
 .socialConnectList .twitter
 {
 	width: 21px;
 	height: 16px;
 	margin-right: 15px;
+	background-image: url(../img/twitterSmall.png);
 }
+.socialConnectList .googlePlus
+{
+	width: 20px;
+	height: 16px;
+	margin-right: 15px;
+	background-image: url(../img/googlePlusSmall.png);
+}
+
 .socialConnect img
 {
 	height: 100%;
@@ -392,25 +417,22 @@ input {
 }
 .sportsCoursesView .viewCourses
 {
-	position: absolute;
-	padding:8px;
+	display: inline-block;
+	padding:6px;
 	background-color: #fff;
-	left:55px;
 	font-weight: bold;
-	top:65px;
 	font-size: 16px;
 	color: rgb(0,0,0);
 	border: 1px solid #FFF;
 	border-radius: 3px;
+	margin:73px 58px;
 	font-family: Myriad Pro Regular;
 }
 .sportsCoursesView .sportsCoursesTitle
 {
-	position: absolute;	
-	top:180px;
 	text-align: center;
 	color:rgb(255,255,255);
-	margin:0;
+	margin-bottom: 30px;
 	font-size: 16px;
 	font-family: Myriad Pro Regular;
 }
@@ -490,9 +512,32 @@ footer
 {
 	margin-bottom: 20px;
 }
+.first
+{
+	color: #FFF;
+}
 .nav
 {
+	float:left;
+}
+.subNav ul a
+{
+	color: #3f5061;
+}
+.nav ul:first-child
+{
+	border-left: none;
+}
+.nav .subNav
+{
 	float: left;
+	border-left: 1px solid #3f5061;
+	min-height: 180px;
+	padding:0 23px;
+}
+.subNav li
+{
+	padding-top: 10px;
 }
 .socialMedia .latestTweet
 {
@@ -524,8 +569,9 @@ footer
 }
 .connectToSocialList li
 {
-	float: left;
 	margin:0 10px;
+	display: inline-block;
+    vertical-align: middle;
 }
 .connectToSocialList .youTubeConnect
 {
@@ -556,29 +602,6 @@ footer
 {
 	font-size: 12px;
 }
-.nav .first
-{
-	color: #FFF;
-}
-.nav ul
-{
-	float: left;
-	border-left: 1px solid #3f5061;
-	padding:0 20px;
-	min-height: 195px;
-}
-.nav ul:first-child
-{
-	border-left: none;
-}
-.nav li
-{
-	margin-bottom: 15px;
-}
-.subNav a
-{
-	color:#3f5061;
-}
 .copyright p
 {
 	padding:5px;
@@ -586,7 +609,7 @@ footer
 	text-align: center;
 	color: #3f5061;
 }
-.container .clear
+.clearFix,.container .clear
 {
 	float:none;
 	clear:both;

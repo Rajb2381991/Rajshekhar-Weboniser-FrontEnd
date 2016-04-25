@@ -11,35 +11,33 @@
 		<header class="header">
 			<div class="firstWraper">
 				<div class="container">	
-					<div class="subMenu">
-						<ul class="subMenuLeft">
-							<li><a href="javascript:void(0);">NFHS.org</a></li>
-							<li><a href="javascript:void(0);">NFHSLearn.com</a></li>
-							<li class="clear"></li>
-						</ul>
-						<ul class="subMenuRight">
-							<li><a href="javascript:void(0);">Sign In</a></li>
-							<li><a href="javascript:void(0);">Register</a></li>
-							<li class="clear"></li>
-						</ul>
-						<div class="clear"></div>
-					</div>
-				</div>
-			</div>
-			<div class="secondWraper">
-				<div class="container">
-					<ul class="headerMenu">
-						<li><a href="javascript:void(0);"><img src="img/magnifyGlass.png" alt="magnifyGlass"></a></li>
-						<li><a href="javascript:void(0);">HELP</a></li>
-						<li><a href="javascript:void(0);">USER LOOKUP</a></li>
-						<li><a href="javascript:void(0);">COACHING REQUIREMENTS</a></li>
-						<li><a href="javascript:void(0);">COURSES</a></li>
+					<a href="javascript:void(0);" class="NFHSLogo"></a>
+					<ul class="subMenuLeft">
+						<li><a href="javascript:void(0);">NFHS.org</a></li>
+						<li><a href="javascript:void(0);">NFHSLearn.com</a></li>
+						<li class="clear"></li>
+					</ul>
+					<ul class="subMenuRight">
+						<li><a href="javascript:void(0);">Sign In</a></li>
+						<li><a href="javascript:void(0);">Register</a></li>
 						<li class="clear"></li>
 					</ul>
 					<div class="clear"></div>
 				</div>
 			</div>
-			<a href="javascript:void(0);" class="NFHSLogo"></a>
+			<div class="secondWraper">
+				<div class="container">
+					<ul class="headerMenu">
+						<li><a href="javascript:void(0);">COURSES</a></li>
+						<li><a href="javascript:void(0);">COACHING REQUIREMENTS</a></li>
+						<li><a href="javascript:void(0);">USER LOOKUP</a></li>
+						<li><a href="javascript:void(0);">HELP</a></li>
+						<li><a href="javascript:void(0);" class="search"></a></li>				
+						<li class="clear"></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
 		</header>
 		<section class="banner">
 			<div class="container">
@@ -85,15 +83,46 @@
 				</ul>
 			</div>
 		</div>
-		<div class="advertisement"><img src="img/AdvertisementJoinToday.jpg" alt="advertisement for join today"></div>
+		<div class="advertisement"><img src="tempImages/AdvertisementJoinToday.jpg" alt="advertisement for join today"></div>
 		<section class="recommendedCourse">
 			<div class="container">
 				<h2>Find Courses Recommended for You</h2>
 				<form>
-					<input type="text" class="position" placeholder="Select Your Position">
-					<input type="text" class="position" placeholder="Select Your State">
-					<input type="text" class="position" placeholder="Select Your Type">
-					<button class="btn">Search</button>
+				<ul class="inputForm">
+					<li>
+						<select class="position">
+							<option value="Select Your Position">Select Your Position</option>
+							<option value="Position-I">Position-I</option>
+							<option value="Position-II">Position-II</option>
+							<option value="Position-III">Position-III</option>
+							<option value="Position-IV">Position-IV</option>
+						</select>
+					</li>
+					<li>
+						<select class="position">
+							<option value="Select Your State">Select Your State</option>
+							<option value="Maharashtra">Maharashtra</option>
+							<option value="Karnataka">Karnataka</option>
+							<option value="AndraPradesh">AndraPradesh</option>
+							<option value="Tamilnadu">Tamilnadu</option>
+							<option value="Telangana">Telangana</option>
+							<option value="Gujarat">Gujarat</option>
+							<option value="Rajastan">Rajastan</option>
+						</select>
+					</li>
+					<li>
+						<select class="position">
+							<option value="Select Course Type">Select Course Type</option>
+							<option value="Week End">Week End</option>
+							<option value="Monthly">Monthly</option>
+							<option value="quartly">quartly</option>
+							<option value="Yearly">Yearly</option>
+						</select>
+					</li>
+					<li class="clear"></li>
+				</ul>
+				<button class="btn">Search</button>
+				<div class="clear"></div>
 				</form>
 			</div>
 		</section>
@@ -102,7 +131,7 @@
 			<div class="container">
 				<ul class="fundamentalCoachingList">
 					<li>
-						<div class="fundamentalCoaching"><img src="img/fundamentalCoaching.jpg" alt="fundamentalCoaching">
+						<div class="fundamentalCoaching"><img src="tempImages/fundamentalCoaching.jpg" alt="fundamentalCoaching">
 							<div class="fundamentalCoachingDetails">
 								<p class="coreCourseTitle">Fundamentals of Coaching</p>
 								<p class="coreCourseScore">Completions:120,000+</p>
@@ -110,7 +139,7 @@
 						</div>
 					</li>
 					<li>
-						<div class="fundamentalCoaching"><img src="img/firstAidForCoaches.jpg" alt="firstAidForCoaches">
+						<div class="fundamentalCoaching"><img src="tempImages/firstAidForCoaches.jpg" alt="firstAidForCoaches">
 							<div class="fundamentalCoachingDetails">
 								<p class="coreCourseTitle">First Aid, Health & Safety for Coaches</p>
 								<p class="coreCourseScore">Completions:120,000+</p>
@@ -121,91 +150,99 @@
 				</ul>
 			</div>
 		</section>
-		<section class="nfhsSportsSpecificCourse">
+		<section class="nfhsSportsSpecificCourse clearFix">
 			<div class="container">
-				<h3>SPORTS SPECIFIC COURSES<a href="javascript:void(0);" class="viewAll">View All</a></h3><span class="clear"></span>
+				<h3>SPORTS SPECIFIC COURSES<span><a href="javascript:void(0);" class="viewAll">View All</a></span></h3><span class="clear"></span>
 				<ul class="sportsSpecificCourseList">
 					<li>
 						<div class="sportsCourses">
-							<div class="sportsSpecificCourse"><img src="img/WrestlingCoaching.jpg" alt="fundamentalCoaching">
+							<div class="sportsSpecificCourse"><img src="tempImages/WrestlingCoaching.jpg" alt="fundamentalCoaching">
 							</div>
 							<div class="sportsSpecificCourseDetails">
 								<p class="sportsCourseTitle">Fundamentals of Coaching <span>Wrestling</span></p>
 								<p class="sportsCourseDetails"><span class="completionValue">$50</span><span class="completionScore">Completions:25,000+</span></p>
 							</div>
 							<div class="sportsCoursesView hvr-wobble-vertical">
-								<a href="javascript:void(0);" class="viewCourses">View Courses</a>
-								<p class="sportsCoursesTitle">Fundamentals of Coaching Wrestling</p>
-								<p class="socialConnectList">
-									<a href="javascript:void(0);" class="mail socialConnect"><img src="img/mailSmall.png" alt="mail"></a>
-									<a href="javascript:void(0);" class="linkedIn socialConnect"><img src="img/linkedIn.png" alt="linkedIn"></a>
-									<a href="javascript:void(0);" class="facebook socialConnect"><img src="img/facebookSmall.png" alt="facebook"></a>
-									<a href="javascript:void(0);" class="twitter socialConnect"><img src="img/twitterSmall.png" alt="twitter"></a>
-									<a href="javascript:void(0);" class="googlePlus socialConnect"><img src="img/googlePlusSmall.png" alt="googlePlus"></a>
-								</p>
+								<div class="CoursesView">
+									<a href="javascript:void(0);" class="viewCourses">View Courses</a>
+									<p class="sportsCoursesTitle">Fundamentals of Coaching Wrestling</p>
+									<div class="socialConnectList">
+										<a href="javascript:void(0);" class="mail socialConnect"></a>
+										<a href="javascript:void(0);" class="linkedIn socialConnect"></a>
+										<a href="javascript:void(0);" class="facebook socialConnect"></a>
+										<a href="javascript:void(0);" class="twitter socialConnect"></a>
+										<a href="javascript:void(0);" class="googlePlus socialConnect"></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="sportsCourses">
-							<div class="sportsSpecificCourse"><img src="img/cheerAndDance.jpg" alt="cheerAndDance">
+							<div class="sportsSpecificCourse"><img src="tempImages/cheerAndDance.jpg" alt="cheerAndDance">
 							</div>
 							<div class="sportsSpecificCourseDetails">
 								<p class="sportsCourseTitle">Fundamentals of Coaching <span>Cheer &amp; Dance</span></p>
 								<p class="sportsCourseDetails"><span class="completionValue">$50</span><span class="completionScore">Completions:45,000+</span></p>
 							</div>
 							<div class="sportsCoursesView hvr-wobble-vertical">
-								<a href="javascript:void(0);" class="viewCourses">View Courses</a>
-								<p class="sportsCoursesTitle">Fundamentals of Coaching Cheer &amp; Dance</p>
-								<p class="socialConnectList">
-									<a href="javascript:void(0);" class="mail socialConnect"><img src="img/mailSmall.png" alt="mail"></a>
-									<a href="javascript:void(0);" class="linkedIn socialConnect"><img src="img/linkedIn.png" alt="linkedIn"></a>
-									<a href="javascript:void(0);" class="facebook socialConnect"><img src="img/facebookSmall.png" alt="facebook"></a>
-									<a href="javascript:void(0);" class="twitter socialConnect"><img src="img/twitterSmall.png" alt="twitter"></a>
-									<a href="javascript:void(0);" class="googlePlus socialConnect"><img src="img/googlePlusSmall.png" alt="googlePlus"></a>
-								</p>
+								<div class="CoursesView">
+									<a href="javascript:void(0);" class="viewCourses">View Courses</a>
+									<p class="sportsCoursesTitle">Fundamentals of Coaching Cheer &amp; Dance</p>
+									<div class="socialConnectList">
+										<a href="javascript:void(0);" class="mail socialConnect"></a>
+										<a href="javascript:void(0);" class="linkedIn socialConnect"></a>
+										<a href="javascript:void(0);" class="facebook socialConnect"></a>
+										<a href="javascript:void(0);" class="twitter socialConnect"></a>
+										<a href="javascript:void(0);" class="googlePlus socialConnect"></a>
+									</div>
+								</div>
 							</div>							
 						</div>
 					</li>
 					<li>
 						<div class="sportsCourses">
-							<div class="sportsSpecificCourse"><img src="img/fieldHockeyCoaching.jpg" alt="fieldHockeyCoaching">
+							<div class="sportsSpecificCourse"><img src="tempImages/fieldHockeyCoaching.jpg" alt="fieldHockeyCoaching">
 							</div>
 							<div class="sportsSpecificCourseDetails">
 								<p class="sportsCourseTitle">Fundamentals of Coaching <span>Field Hockey</span></p>
 								<p class="sportsCourseDetails"><span class="completionValue">$75</span><span class="completionScore">Completions:15,000+</span></p>
 							</div>
 							<div class="sportsCoursesView hvr-wobble-vertical">
-								<a href="javascript:void(0);" class="viewCourses">View Courses</a>
-								<p class="sportsCoursesTitle">Fundamentals of Coaching Field Hockey</p>
-								<p class="socialConnectList">
-									<a href="javascript:void(0);" class="mail socialConnect"><img src="img/mailSmall.png" alt="mail"></a>
-									<a href="javascript:void(0);" class="linkedIn socialConnect"><img src="img/linkedIn.png" alt="linkedIn"></a>
-									<a href="javascript:void(0);" class="facebook socialConnect"><img src="img/facebookSmall.png" alt="facebook"></a>
-									<a href="javascript:void(0);" class="twitter socialConnect"><img src="img/twitterSmall.png" alt="twitter"></a>
-									<a href="javascript:void(0);" class="googlePlus socialConnect"><img src="img/googlePlusSmall.png" alt="googlePlus"></a>
-								</p>
+								<div class="CoursesView">
+									<a href="javascript:void(0);" class="viewCourses">View Courses</a>
+									<p class="sportsCoursesTitle">Fundamentals of Coaching Field Hockey</p>
+									<div class="socialConnectList">
+										<a href="javascript:void(0);" class="mail socialConnect"></a>
+										<a href="javascript:void(0);" class="linkedIn socialConnect"></a>
+										<a href="javascript:void(0);" class="facebook socialConnect"></a>
+										<a href="javascript:void(0);" class="twitter socialConnect"></a>
+										<a href="javascript:void(0);" class="googlePlus socialConnect"></a>
+									</div>
+								</div>
 							</div>							
 						</div>
 					</li>
 					<li>
 						<div class="sportsCourses">
-							<div class="sportsSpecificCourse"><img src="img/basketballCoaching.jpg" alt="basketballCoaching">
+							<div class="sportsSpecificCourse"><img src="tempImages/basketballCoaching.jpg" alt="basketballCoaching">
 							</div>
 							<div class="sportsSpecificCourseDetails">
 								<p class="sportsCourseTitle">Fundamentals of Coaching <span>Basketball</span></p>
 								<p class="sportsCourseDetails"><span class="completionValue">$50</span><span class="completionScore">Completions:80,000+</span></p>
 							</div>
 							<div class="sportsCoursesView hvr-wobble-vertical">
-								<a href="javascript:void(0);" class="viewCourses">View Courses</a>
-								<p class="sportsCoursesTitle">Fundamentals of Coaching Basketball</p>
-								<p class="socialConnectList">
-									<a href="javascript:void(0);" class="mail socialConnect"><img src="img/mailSmall.png" alt="mail"></a>
-									<a href="javascript:void(0);" class="linkedIn socialConnect"><img src="img/linkedIn.png" alt="linkedIn"></a>
-									<a href="javascript:void(0);" class="facebook socialConnect"><img src="img/facebookSmall.png" alt="facebook"></a>
-									<a href="javascript:void(0);" class="twitter socialConnect"><img src="img/twitterSmall.png" alt="twitter"></a>
-									<a href="javascript:void(0);" class="googlePlus socialConnect"><img src="img/googlePlusSmall.png" alt="googlePlus"></a>
-								</p>
+								<div class="CoursesView">
+									<a href="javascript:void(0);" class="viewCourses">View Courses</a>
+									<p class="sportsCoursesTitle">Fundamentals of Coaching Basketball</p>
+									<div class="socialConnectList">
+										<a href="javascript:void(0);" class="mail socialConnect"></a>
+										<a href="javascript:void(0);" class="linkedIn socialConnect"></a>
+										<a href="javascript:void(0);" class="facebook socialConnect"></a>
+										<a href="javascript:void(0);" class="twitter socialConnect"></a>
+										<a href="javascript:void(0);" class="googlePlus socialConnect"></a>
+									</div>
+								</div>
 							</div>							
 						</div>
 					</li>
@@ -213,7 +250,7 @@
 				</ul>
 			</div>
 		</section>
-		<div class="advertisement"><img src="img/AdvertisementWeAllWin.jpg" alt="advertisement for we all win"></div>
+		<div class="advertisement"><img src="tempImages/AdvertisementWeAllWin.jpg" alt="advertisement for we all win"></div>
 		<footer class="footer">
 			<div class="container">
 				<div class="footerSection">
@@ -222,26 +259,38 @@
 							<li><a href="javascript:void(0);" class="first">Home</a></li>
 						</ul>
 						<ul class="subNav">
-							<li><a href="javascript:void(0);" class="first">Courses</a></li>
-							<li><a href="javascript:void(0);">Core Courses</a></li>
-							<li><a href="javascript:void(0);">State Components</a></li>
-							<li><a href="javascript:void(0);">Sport-Specific Courses</a></li>
-							<li><a href="javascript:void(0);">Elective Courses</a></li>
+							<li>
+								<a href="javascript:void(0);" class="first">Courses</a>
+								<ul>
+									<li><a href="javascript:void(0);">Core Courses</a></li>
+									<li><a href="javascript:void(0);">State Components</a></li>
+									<li><a href="javascript:void(0);">Sport-Specific Courses</a></li>
+									<li><a href="javascript:void(0);">Elective Courses</a></li>
+								</ul>
+							</li>
 						</ul>
 						<ul class="subNav">
-							<li><a href="javascript:void(0);" class="first">Resources</a></li>
-							<li><a href="javascript:void(0);">Coaching Requirements</a></li>
-							<li><a href="javascript:void(0);">User Search</a></li>
-							<li><a href="javascript:void(0);">College Credit / CEUs</a></li>
+							<li>
+								<a href="javascript:void(0);" class="first">Resources</a>
+								<ul>
+									<li><a href="javascript:void(0);">Coaching Requirements</a></li>
+									<li><a href="javascript:void(0);">User Search</a></li>
+									<li><a href="javascript:void(0);">College Credit / CEUs</a></li>
+								</ul>
+							</li>
 						</ul>		
 						<ul class="subNav">
-							<li><a href="javascript:void(0);" class="first">Our Organization</a></li>
-							<li><a href="javascript:void(0);">NFHS.org</a></li>
-							<li><a href="javascript:void(0);">Partners</a></li>
-							<li><a href="javascript:void(0);">Privacy Policy</a></li>
-							<li><a href="javascript:void(0);">Help Desk</a></li>
-							<li><a href="javascript:void(0);">Advertisers</a></li>
-						</ul>							
+							<li>
+								<a href="javascript:void(0);" class="first">Our Organization</a>
+								<ul>
+									<li><a href="javascript:void(0);">NFHS.org</a></li>
+									<li><a href="javascript:void(0);">Partners</a></li>
+									<li><a href="javascript:void(0);">Privacy Policy</a></li>
+									<li><a href="javascript:void(0);">Help Desk</a></li>
+									<li><a href="javascript:void(0);">Advertisers</a></li>
+								</ul>
+							</li>
+						</ul>													
 						<div class="clear"></div>
 					</div>
 					<div class="socialMedia">
@@ -251,10 +300,10 @@
 							<p class="followAt">Follow @NFHSCoachEd</p>
 						</div>
 						<ul class="connectToSocialList">
-							<li><a href="javascript:void(0);" class="mediaConnect facebookConnect"><img src="img/facebook.png" alt="facebook media"></a></li>
+							<li>
+							<a href="javascript:void(0);" class="mediaConnect facebookConnect"><img src="img/facebook.png" alt="facebook media"></a></li>
 							<li><a href="javascript:void(0);" class="mediaConnect youTubeConnect"><img src="img/youTube.png" alt="facebook media"></a></li>
 							<li><a href="javascript:void(0);" class="mediaConnect twitterConnect"><img src="img/twitter.png" alt="facebook media"></a></li>
-							<li class="clear"></li>
 						</ul>
 					</div>
 					<div class="clear"></div>
