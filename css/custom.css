@@ -100,8 +100,7 @@ h2 span
 .features
 {
 	background-color: #f0f0f0;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding:60px 0;
 }
 .featureIcon i
 {
@@ -113,58 +112,50 @@ h2 span
 {
 	background-position: 0 -86px;
 	height:20px;
-	margin-top: 12px;
-	margin-left: 11px;
+	margin:12px 0 0 11px;
 }
 .featureIcon .createAssessmentIcon
 {
 	background-position: 0 -106px;
 	height:22px;
-	margin-top: 11px;
-	margin-left: 14px;
+	margin:11px 0 0 14px;
 }
 .featureIcon .trackScoresIcon
 {
 	background-position: 0 -132px;
 	height:20px;
-	margin-top: 12px;
-	margin-left: 13px;
+	margin:12px 0 0 13px;
 }
 .featureIcon .groupDiscussionsIcon
 {
 	background-position: 0 -155px;
 	height:22px;
-	margin-top: 11px;
-	margin-left: 11px;
+	margin:11px 0 0 11px;
 }
 .featureIcon .reportsIcon
 {
 	background-position: 0 -180px;
 	height:22px;
-	margin-top: 12px;
-	margin-left: 12px;
+	margin:12px 0 0 12px;
 }
 .featureIcon .multimediaSupportIcon
 {
 	background-position: 0 -201px;
 	height:22px;
-	margin-top: 12px;
-	margin-left: 12px;
+	margin:12px 0 0 12px;
 }
 
 .featureIcon .aptitudeTestsIcon
 {
 	background-position: 0 -222px;
 	height:22px;
-	margin-top: 12px;
-	margin-left: 12px;
+	margin:12px 0 0 12px;
 }
 .featureIcon .certificationsIcon
 {
 	background-position: 0 -247px;
 	height:22px;
-	margin-top: 12px;
-	margin-left: 12px;
+	margin:12px 0 0 12px;
 }
 .featureTitle
 {
@@ -298,54 +289,42 @@ h2 span
 {
 	background-position: 0 -63px;
 	height: 20px;
-	margin-left: 15px;
-	margin-top:10px;
+	margin:10px 0 0 15px;
 }
-.socialConnect .twiterIcon
-{
+.socialConnect .twiterIcon{
 	background-position: 0 -43px;
 	height: 20px;
-	margin-left: 9px;
-	margin-top:10px;
+	margin:10px 0 0 9px;
 }
-.socialConnect .pinIcon
-{
+.socialConnect .pinIcon{
 	background-position: 0 -20px;
 	height: 20px;
-	margin-left: 12px;
-	margin-top:10px;	
+	margin: 10px 0 0 12px;
 }
-.socialConnect .googlePlusIcon
-{
+.socialConnect .googlePlusIcon{
 	background-position: 0 0;
 	height: 20px;
-	margin-left: 11px;
-	margin-top:12px;
+	margin:12px 0 0 11px;
 }
 
-.copyrightText
-{
+.copyrightText{
 	float: left;
 	font-size: 14px;
 	color: #222222;
 	margin-right: 25px;
 }
-.footerSubNav
-{
+.footerSubNav{
 	float: left;
 }
-.footerSubNav li
-{
+.footerSubNav li{
 	float: left;
 	margin-right: 15px;
 }
-.footerSubNav a
-{
+.footerSubNav a{
 	color: #FFF;
 	font-size: 14px;
 }
-.container .clear,.clear
-{
+.container .clear,.clear{
 	float: none;
 	clear: both;
 }
