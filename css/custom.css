@@ -1,0 +1,351 @@
+*{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style-type: none;
+}
+a
+{
+	text-decoration: none;
+}
+.header{
+	background-color: #FFF;
+	padding:5px 0;
+}
+.container{
+	width: 940px;
+	margin:0 auto;
+}
+.nav{
+	float: right;
+}
+.header .menu{
+	float: left;
+	margin:10px 0;
+}
+.menu li{
+	float: left;
+	margin-right: 30px;
+}
+.menu a
+{
+	font-size: 16px;
+	color: #666666;
+	font-weight: 700;
+}
+.menu a:hover
+{
+	color: #000;
+	font-weight: 700;
+}
+.btnLogin
+{
+	padding:7px 25px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 138, 0);
+    border-radius: 5px;
+    color: #ff8a00;
+    display: inline-block;
+}
+.LMSLogo{
+	float: left;
+	background-image: url(../img/LMSLogo.png);
+	width: 60px;
+	height: 23px;
+	margin:5px 0;
+	display: block;
+}
+.banner
+{
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	height: 612px;
+}
+.bannerContent
+{
+	padding-top:52px;
+	float: right;
+}
+.bannerContent h1
+{
+	font-size: 40px;
+	width:380px;
+	margin-bottom: 40px;
+	color: #222222;
+}
+.bannerContent .btnGetStarted
+{
+	padding:13px 20px;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: rgb(255, 138, 0);
+	border-radius:5px;
+	border-color: rgb(255, 138, 0);
+	display: inline-block;
+}
+.features h2
+{
+	font-size: 36px;
+	color: #444444;	
+	text-align: center;
+	margin-bottom: 42px;
+}
+h2 span
+{
+	color: #222222;
+}
+.features
+{
+	background-color: #f0f0f0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.featureIcon i
+{
+	background-image: url(../img/spritesImage.png);
+	background-repeat: no-repeat;
+	display:block;
+}
+.featureIcon .createCourseIcon
+{
+	background-position: 0 -86px;
+	height:20px;
+	margin-top: 12px;
+	margin-left: 11px;
+}
+.featureIcon .createAssessmentIcon
+{
+	background-position: 0 -106px;
+	height:22px;
+	margin-top: 11px;
+	margin-left: 14px;
+}
+.featureIcon .trackScoresIcon
+{
+	background-position: 0 -132px;
+	height:20px;
+	margin-top: 12px;
+	margin-left: 13px;
+}
+.featureIcon .groupDiscussionsIcon
+{
+	background-position: 0 -155px;
+	height:22px;
+	margin-top: 11px;
+	margin-left: 11px;
+}
+.featureIcon .reportsIcon
+{
+	background-position: 0 -180px;
+	height:22px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+.featureIcon .multimediaSupportIcon
+{
+	background-position: 0 -201px;
+	height:22px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+
+.featureIcon .aptitudeTestsIcon
+{
+	background-position: 0 -222px;
+	height:22px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+.featureIcon .certificationsIcon
+{
+	background-position: 0 -247px;
+	height:22px;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+.featureTitle
+{
+	padding-top:20px;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	margin-bottom: 17px;
+	text-align: center;
+}
+.featureIcon
+{
+	position: absolute;
+	background-color: #ff8a00;
+	width:45px;
+	height:45px;
+	border-radius: 50px;
+	left:85px;
+	top:-23px;
+}
+.featuresContent
+{
+	margin-left: -20px;
+}
+.featuresContent li
+{
+	position: relative;
+	float: left;
+	border:2px solid #E4E4E4;
+	padding:10px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	background-color: #FFF;
+	width:196px;
+}
+.featuresContent .clear
+{
+	margin:0;
+	padding:0;
+	border:none;
+}
+.featureDescription
+{
+	display: inline-block;
+}
+.featuresContent .clear
+{
+	padding: 0;
+	margin:0;
+}
+.getMoreAbout
+{
+	background-color: #555555;
+	padding-bottom: 195px;
+}
+.getMoreAbout h3
+{
+	float: left;
+	font-family: Myriad Pro Regular;
+	color: #FFF;
+	font-size: 30px;
+	text-align: center;
+	padding:10px 0;
+}
+.getMoreAbout .btnGetStarted
+{
+	font-family: Myriad Pro Regular;
+	float: right;
+	padding:10px 14px;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #ff8a00;
+	border-radius:5px;
+	display: inline-block;
+}
+.getMoreAboutTitle 
+{
+	padding:20px 0;
+	border-bottom: 1px solid #000;
+}
+.footerNav
+{
+	padding-top:25px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.socialConnect
+{
+	float: right;
+	padding-top: 25px;
+}
+.footerNav li
+{
+	float: left;
+	margin-right: 18px;
+}
+.footerNav a
+{
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+}
+.footerNav a:hover
+{
+	color: #000;
+}
+.socialConnect li
+{
+	float: left;
+	margin-left: 5px;
+	background-color: #888888;
+	width:40px;
+	height:40px;
+	border-radius: 50px;
+}
+.socialConnect .clear
+{
+	margin:0;
+	height: 0;
+	width: 0;
+}
+.socialConnect a
+{
+	background-image: url(../img/spritesImage.png);
+	background-repeat: no-repeat;
+	display:block;
+}
+.socialConnect .facebookIcon
+{
+	background-position: 0 -63px;
+	height: 20px;
+	margin-left: 15px;
+	margin-top:10px;
+}
+.socialConnect .twiterIcon
+{
+	background-position: 0 -43px;
+	height: 20px;
+	margin-left: 9px;
+	margin-top:10px;
+}
+.socialConnect .pinIcon
+{
+	background-position: 0 -20px;
+	height: 20px;
+	margin-left: 12px;
+	margin-top:10px;	
+}
+.socialConnect .googlePlusIcon
+{
+	background-position: 0 0;
+	height: 20px;
+	margin-left: 11px;
+	margin-top:12px;
+}
+
+.copyrightText
+{
+	float: left;
+	font-size: 14px;
+	color: #222222;
+	margin-right: 25px;
+}
+.footerSubNav
+{
+	float: left;
+}
+.footerSubNav li
+{
+	float: left;
+	margin-right: 15px;
+}
+.footerSubNav a
+{
+	color: #FFF;
+	font-size: 14px;
+}
+.container .clear,.clear
+{
+	float: none;
+	clear: both;
+}
