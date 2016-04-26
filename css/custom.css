@@ -186,8 +186,7 @@ h2 span
 	float: left;
 	border:2px solid #E4E4E4;
 	padding:10px;
-	margin-bottom: 30px;
-	margin-left: 20px;
+	margin:0 0 30px 20px;
 	background-color: #FFF;
 	width:196px;
 }
@@ -218,7 +217,7 @@ h2 span
 	color: #FFF;
 	font-size: 30px;
 	text-align: center;
-	padding:10px 0;
+	margin:10px 0;
 }
 .getMoreAbout .btnGetStarted
 {
@@ -234,6 +233,7 @@ h2 span
 .getMoreAboutTitle 
 {
 	padding:20px 0;
+	margin-bottom: 10px;
 	border-bottom: 1px solid #000;
 }
 .footerNav
@@ -266,7 +266,7 @@ h2 span
 .socialConnect li
 {
 	float: left;
-	margin-left: 5px;
+	margin-left: 10px;
 	background-color: #888888;
 	width:40px;
 	height:40px;
