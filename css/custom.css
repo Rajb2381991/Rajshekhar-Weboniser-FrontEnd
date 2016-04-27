@@ -1,3 +1,81 @@
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('../fonts/titilliumweb-regular-webfont.eot');
+    src: url('../fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url('../fonts/titilliumweb-bold-webfont.eot');
+    src: url('../fonts/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-bold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-bold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-bold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('../fonts/ubuntu-b-webfont.eot');
+    src: url('../fonts/ubuntu-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-b-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-b-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-b-webfont.svg#ubuntubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../fonts/ubuntu-l-webfont.eot');
+    src: url('../fonts/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-l-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-l-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-l-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
 	padding:0;
 	margin:0;
@@ -21,41 +99,46 @@ a
 	float: right;
 }
 .header .menu{
-	float: left;
 	margin:10px 0;
+	display: inline-block;
+	vertical-align: middle;
 }
 .menu li{
-	float: left;
 	margin-right: 30px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .menu a
 {
+	font-family: open_sanssemibold;
 	font-size: 16px;
 	color: #666666;
-	font-weight: 700;
+	font-weight: 900;
 }
 .menu a:hover
 {
 	color: #000;
-	font-weight: 700;
+	font-weight: 900;
 }
 .btnLogin
 {
-	padding:7px 25px;
-	border-style: solid;
+	font-family: open_sanssemibold;
+	padding:8px 10px;
+    border-style: solid;
     border-width: 3px;
-    border-color: rgb(255, 138, 0);
-    border-radius: 5px;
+    border-color: #ff8a00;
+    border-radius: 4px;
     color: #ff8a00;
     display: inline-block;
 }
 .LMSLogo{
-	float: left;
 	background-image: url(../img/LMSLogo.png);
 	width: 60px;
 	height: 23px;
 	margin:5px 0;
 	display: block;
+	display: inline-block;
+	vertical-align: middle;
 }
 .banner
 {
@@ -70,14 +153,17 @@ a
 }
 .bannerContent h1
 {
+	font-family: open_sanslight;
 	font-size: 40px;
 	width:380px;
 	margin-bottom: 40px;
 	color: #222222;
+	font-weight: 900;
 }
 .bannerContent .btnGetStarted
 {
-	padding:13px 20px;
+	font-family: open_sansbold;
+	padding:20px 30px;
 	color: #FFF;
 	font-size: 30px;
 	font-weight: bold;
@@ -88,6 +174,7 @@ a
 }
 .features h2
 {
+	font-family: ubuntulight;
 	font-size: 36px;
 	color: #444444;	
 	text-align: center;
@@ -96,6 +183,7 @@ a
 h2 span
 {
 	color: #222222;
+	font-family: ubuntubold;
 }
 .features
 {
@@ -117,14 +205,14 @@ h2 span
 .featureIcon .createAssessmentIcon
 {
 	background-position: 0 -106px;
-	height:22px;
+	height:24px;
 	margin:11px 0 0 14px;
 }
 .featureIcon .trackScoresIcon
 {
 	background-position: 0 -132px;
-	height:20px;
-	margin:12px 0 0 13px;
+	height:22px;
+	margin:10px 0 0 14px;
 }
 .featureIcon .groupDiscussionsIcon
 {
@@ -148,7 +236,7 @@ h2 span
 .featureIcon .aptitudeTestsIcon
 {
 	background-position: 0 -222px;
-	height:22px;
+	height:23px;
 	margin:12px 0 0 12px;
 }
 .featureIcon .certificationsIcon
@@ -184,7 +272,7 @@ h2 span
 {
 	position: relative;
 	float: left;
-	border:2px solid #E4E4E4;
+	border:1px solid #E4E4E4;
 	padding:10px;
 	margin:0 0 30px 20px;
 	background-color: #FFF;
@@ -199,6 +287,7 @@ h2 span
 .featureDescription
 {
 	display: inline-block;
+	font-weight:400;
 }
 .featuresContent .clear
 {
@@ -213,7 +302,7 @@ h2 span
 .getMoreAbout h3
 {
 	float: left;
-	font-family: Myriad Pro Regular;
+	font-family:titillium_webregular;
 	color: #FFF;
 	font-size: 30px;
 	text-align: center;
@@ -221,9 +310,9 @@ h2 span
 }
 .getMoreAbout .btnGetStarted
 {
-	font-family: Myriad Pro Regular;
+	font-family:titillium_webbold;
 	float: right;
-	padding:10px 14px;
+	padding:15px 18px;
 	color: #FFF;
 	font-size: 30px;
 	font-weight: bold;
@@ -255,6 +344,7 @@ h2 span
 }
 .footerNav a
 {
+	font-family: titillium_webbold;
 	color: #FFF;
 	font-size: 18px;
 	font-weight: bold;
@@ -320,6 +410,7 @@ h2 span
 	margin-right: 15px;
 }
 .footerSubNav a{
+	font-family:titillium_webregular;
 	color: #FFF;
 	font-size: 14px;
 }
