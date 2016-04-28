@@ -89,6 +89,19 @@ ul
 {
 	color: #636363;
 }
+.tryItForFree
+{
+	font-family:rajdhanisemibold;
+	border-radius: 5px;
+	background-color: #ef3f37;
+	color: #fff;
+	display:inline-block;
+}
+.customNavbar .tryItForFree
+{
+	padding:20px 55px;
+	font-size: 24px;
+}
 .tryItForFree:hover,.tryItForFree:focus
 {
 	text-decoration: none;
@@ -119,6 +132,11 @@ ul
 	font-family: open_sansregular;
 	font-size: 14px;
 	color: #fff;
+}
+.bannerContent .tryItForFree
+{
+	padding:20px 70px;
+	font-size: 22px;
 }
 .bannerContent .laptop
 {
@@ -201,22 +219,19 @@ ul
 	width:770px;
 	margin:0 auto;
 }
+.memberContent .tryItForFree
+{
+	padding:20px 54px;
+	font-size: 22px;
+}
 .memberContent .noCreditCard
 {
 	margin-bottom: 55px;
 	color: #556569;
 	font-size: 14px;
 }
-.tryItForFree
-{
-	font-family:rajdhanisemibold;
-	border-radius: 5px;
-	background-color: #ef3f37;
-	padding:20px 55px;
-	color: #fff;
-	font-size: 24px;
-	display:inline-block;
-}
+
+
 .membershipDetails li::before
 {
 	content: "";
