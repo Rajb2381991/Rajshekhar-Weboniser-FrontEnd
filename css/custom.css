@@ -1,0 +1,478 @@
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fonts/opensans-italic-webfont.eot');
+    src: url('../fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-italic-webfont.woff') format('woff'),
+         url('../fonts/opensans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url('../fonts/titilliumweb-bold-webfont.eot');
+    src: url('../fonts/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-bold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-bold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-bold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: '1';
+    src: url('../fonts/titilliumweb-regular-webfont.eot');
+    src: url('../fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titillium_websemibold';
+    src: url('../fonts/titilliumweb-semibold-webfont.eot');
+    src: url('../fonts/titilliumweb-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-semibold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-semibold-webfont.svg#titillium_websemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6,li{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style-type: none;
+}
+a,a:hover,a:focus{
+	text-decoration: none;
+}
+.firstWraper{
+	background-color:#586d83;
+	font-family: arial Regular;
+	font-weight: 300;
+	position: relative;
+}
+.secondWraper{
+	background-color: #FFF;
+}
+.subMenuLeft{
+	position: relative;
+	float:left;
+	margin-left:82px;
+}
+.subMenuRight{
+	float: right;
+}
+.subMenuLeft li{
+	float: left;
+}
+.subMenuRight li{
+	float: left;
+}
+.subMenu li{
+	float: left;
+}
+.subMenuLeft a{
+	font-family: arial regular;
+	display: block;
+	color: #19191a;
+	padding:15px 22px;
+	font-size: 12px;
+}
+.subMenuLeft a:hover,.subMenuRight a:hover{
+	color: #FFF;
+	background-color: #4e6073;
+}
+.subMenuRight a{
+	font-family: arial regular;
+	display: block;
+	color: #FFF;
+	padding:15px 22px;
+	font-size: 12px;
+}
+.headerMenu{
+	float: right;
+}
+.headerMenu li:first-child{
+	border-left:1px solid #ededed;
+}
+.headerMenu li{
+	float:left;
+	border-right:1px solid #ededed;
+}
+.headerMenu a:hover{
+	color: #FFF;
+	background-color: #cb2c26;
+}
+.headerMenu a{
+	font-family: titillium_webbold;
+	display: block;
+	color: #19232d;
+	font-size: 16px;
+    padding:30px 22px;
+}
+.headerMenu .clear{
+	padding:0;
+}
+.NFHSLogo{
+	position: absolute;
+	background-image: url('../img/NFHSLogo.png');
+	width:82px;
+	height: 126px;
+}
+.officials .officialsNav{
+	margin-left: 94px;
+}
+.officialsNav a{
+	color: #FFF;
+	font-size: 12px;
+}
+.subNav:before{
+  content: "\e080";
+  font-family:"Glyphicons Halflings";
+  line-height:1;
+  margin:5px;
+}
+.officialsNav{
+	margin-bottom: 25px;
+}
+.officialsNav a{
+	font-family:open_sansregular;
+	font-size: 12px;
+}
+.officialsNav .home{
+	color: #5f8aba;
+}
+.officials h2{
+	font-family: titillium_webbold;
+	font-size: 40px;
+	margin-left: 94px;
+	color: #FFF;
+}
+.officials{
+	background-image: url(../img/patternOne.jpg);
+	height: 125px;
+}
+.coaching{
+	position: relative;
+	background-image: url(../img/coachingBanner.jpg);
+	background-size: cover;
+	height: 369px;
+	margin-bottom: 112px;
+}
+.coaching h1{
+	font-family:titillium_webbold;
+	font-size: 48px;
+	color: #FFF;
+	padding-top: 226px;
+}
+.coachingContent{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: #36414a;
+	padding:20px 17px;
+}
+.coachingDetails .fineline{
+	color: #a3b9d0;
+	font-size: 14px;
+	font-family:open_sansregular;
+	width: 481px;
+	float: left;
+	margin-right: 108px;
+}
+.coachingDetails a{ 
+	float: left;
+	font-family: titillium_webregular;
+	font-size:18px;
+	color: #EEEEEE;
+	padding: 10px 14px;
+	background-color: #cb2c26;
+}
+.todayColumn h3{
+	font-family: titillium_webbold;
+	font-size: 24px;
+	color: #cb2c26;
+	margin-bottom: 5px;
+}
+.todayColumnNav li{
+	float: left;
+	margin-right: 25px;
+	line-height: 30px;
+}
+.todayColumnNav a{
+	text-decoration: underline;
+	font-family: titillium_webregular;
+	font-size: 12px;
+}
+.todayColumnRow{
+	border-bottom: 4px solid #cb2c26;
+	margin-bottom: 20px;
+}
+.columnsImages{
+	height: 155px;
+	margin-bottom: 15px;
+}
+.columnsImages img{
+	width: 100%;
+	height: 100%;
+}
+.todayColumnList{
+	margin-bottom: 110px;
+}
+.todayColumnList h6{
+	font-family: open_sansbold;
+	color: #244674;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.todayColumnList p{
+	font-family:open_sansitalic;
+	color: #244674;
+	font-size:14px;
+}
+.centralHub{
+	background-image: url(../img/patternTwo.jpg);
+	margin-bottom: 106px;
+}
+.centralHubContent{
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+.rules h3{
+	color: #FFF;
+	margin-bottom:8px;
+}
+.ruleChanges {
+	padding-top: 18px;
+}
+.ruleChanges li{
+	margin-bottom: 30px;
+}
+.ruleChanges h6{
+	font-size: 14px;
+	color: #5f8aba;
+	font-family:open_sansbold;
+}
+.ruleChanges p{
+	color: #abb3b8;
+	font-family:open_sansregular;
+}
+.rules h3{
+	color: #FFF;
+	padding-bottom:8px;
+	border-bottom: 3px solid #FFF;
+}
+.nfhsHub h3{
+	color: #FFF;
+	padding-bottom:8px;
+	border-bottom: 3px solid #FFF;
+}
+.nfhsHub p {
+	font-family:open_sansregular;
+	width:570px;
+	color: #abb3b8;
+	padding-top: 18px;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.nfhsHub{
+	position: relative;
+}
+.videoImage img{
+	width: 100%;
+	height: 100%;
+}
+.videoImage{
+	width: 378px;
+	height: 209px;
+}
+.associationMember h4{
+	font-family:open_sansbold;
+	font-size: 18px;
+	color: #abb3bd;
+	margin-bottom: 20px;
+}
+.associationMemberList li{
+	margin-bottom: 25px;
+	color: #abb3b8;
+	font-family:open_sansregular;
+}
+.associationMemberList a{
+	color: #abb3b8;
+}
+.joinToday a{
+	color: #FFF;
+	float: left;
+	margin-left: 22px;
+	padding:10px 15px;
+	background-color: #cb2c26;
+	display: block;
+}
+.joinToday{
+	margin-left: 290px;
+}
+.NFHSLearningCenter h3, .OfficialAwards h3{
+	font-family: titillium_webbold;
+	font-size: 24px;
+	color: #cb2c26;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #cb2c26;
+	margin-bottom: 24px;
+}
+.LearningCenterImage{
+	width:300px; 
+	height:181px;
+	float: left;
+	margin-right: 20px;
+}
+.LearningCenterImage img{
+	width: 100%;
+	height: 100%;
+}
+.NFHSLearningCenter .learningCenterTitle{
+	font-family: titillium_websemibold;
+	color: #244674;
+	font-size: 18px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.NFHSLearningCenter .learningCenterDescription{
+	color: #5f5b61;
+	width: 270px;
+	font-size: 14px;
+	font-family: Helvitica;
+	margin-bottom: 60px;
+}
+.NFHSLearningCenter .learningCenterTitle:after{
+  content: "\e164";
+  font-family:"Glyphicons Halflings";
+  line-height:1;
+  margin:15px;
+}
+.learningCenter h4{
+	color: #5f5b61;
+	font-size: 18px;
+	font-family: titillium_webbold;
+	margin-bottom:25px;
+	display: inline-block;
+}
+.electiveCoursesList li{
+	margin-bottom: 20px;
+	font-family: open_sansregular;
+	font-size: 14px;
+	color: #5f5b61;
+}
+.OfficialAwardsList li{
+	margin:0 65px 30px 0;
+}
+.OfficialAwardsList h6{
+	color: #244674;
+	font-size: 14px;
+	font-family: open_sansbold;
+	margin-bottom: 10px;
+}
+.OfficialAwardsList p{
+	width:200px;
+	font-family: open_sansregular;
+	font-size: 14px;
+	color: #244674;
+}
+.NFHSCenterAndAwards .viewAll{
+	color: #eeeeee;
+	font-size: 18px;
+	font-family: titillium_webregular;
+	padding:10px 15px;
+	background-color: #cb2c26;
+	display: inline-block;
+}
+.NFHSCenterAndAwards{
+	margin-bottom: 70px;
+}
+.advertisement{
+	margin-bottom: 72px;
+}
+.footer{
+	background-color: #19232d;
+	padding-top: 35px;
+}
+.footerMenuOne>a{
+	color: #FFF;
+	font-size: 14px;
+	font-family: arial regular;
+	font-weight: bold;
+}
+.footerMenuOne ul{
+	padding-top: 15px;
+}
+.footerMenuOne{
+	float: left;
+	min-height: 336px;
+	border-left:2px solid #FFF;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	width:200px;
+}
+.footerMenuOne ul li{
+	margin-bottom: 15px;
+}
+.footerMenuOne ul a{
+	color: #586d83;
+	font-size: 14px;
+	font-family: arial regular;
+}
+.footerMenu li:first-child{
+	border:none;
+}
+.footerMenu{
+	width: 800px;
+	margin:0 auto;
+}
+.copyright{
+	background-image: url(../img/patternTwo.jpg);
+}
+.copyright p{
+	padding:12px 0;
+	color: #FFF;
+}
