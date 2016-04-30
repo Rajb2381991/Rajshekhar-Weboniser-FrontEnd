@@ -53,187 +53,155 @@
     font-weight: normal;
     font-style: normal;
 }
-ul,li,p,h1,h2,h3,h4,h5,h6,li
-{
+ul,li,p,h1,h2,h3,h4,h5,h6,li{
 	padding: 0;
 	margin: 0;
 }
-ul
-{
+ul{
 	list-style-type: none;
 }
-.customMenu
-{
+.customMenu{
 	background-color: #FFF;
 	padding:16px 0;
 	margin-bottom: 0;
 }
-.acendLogo
-{
+.acendLogo{
 	background-image: url('../img/acendLogo.png');
 	display: block;
 	height: 62px;
 	width: 281px;
 }
-.customNavbar li
-{
+.customNavbar li{
 	padding:10px 0;
 }
-.customNav a
-{
+.customNav a{
 	font-family:rajdhanimedium; 
 	font-size: 20px;
 	color: #636363;
 }
-.navbar-default .navbar-nav > li > a:hover
-{
+.navbar-default .navbar-nav > li > a:hover{
 	color: #636363;
 }
-.tryItForFree
-{
+.tryItForFree{
 	font-family:rajdhanisemibold;
 	border-radius: 5px;
 	background-color: #ef3f37;
 	color: #fff;
 	display:inline-block;
 }
-.customNavbar .tryItForFree
-{
+.customNavbar .tryItForFree{
 	padding:20px 55px;
 	font-size: 24px;
 }
-.tryItForFree:hover,.tryItForFree:focus
-{
+.tryItForFree:hover,.tryItForFree:focus{
 	text-decoration: none;
 	color: #FFF;
 }
-.banner
-{
+.banner{
+	position: relative;
 	background-image: url(../img/banner.jpg);
 	height: 497px;
 	background-size: cover;
+	padding-top:130px;
 }
-.bannerContent
-{
-	position: relative;
+.bannerContent{
 	width:630px;
 	margin:0 auto;
 }
-.bannerContent h1
-{
+.bannerContent h1{
 	font-family:rajdhanisemibold;
-	padding-top:130px;
 	font-size: 60px;
 	margin-bottom: 30px;
 	color: #FFF;
 }
-.bannerContent .noCreditCard
-{
+.bannerContent .noCreditCard{
 	font-family: open_sansregular;
 	font-size: 14px;
 	color: #fff;
 }
-.bannerContent .tryItForFree
-{
+.bannerContent .tryItForFree{
 	padding:20px 70px;
 	font-size: 22px;
 }
-.bannerContent .laptop
-{
+.laptop{
 	position: absolute;
 	background-image: url(../img/laptop.png);
 	width: 642px;
 	height: 355px;
-	top:420px;
+	left: 50%;
+	margin-left: -321px;
+	bottom: -275px;
 }
-.spaceSafety h2
-{
+.spaceSafety{
+	padding-top: 350px;
+	margin-bottom: 125px;
+}
+.spaceSafety h2{
 	font-family:rajdhanisemibold;
 	text-transform: uppercase;
-	padding-top: 350px;
 	color: #323232;
 	font-size: 36px;
 	margin-bottom: 25px;
 }
-.spaceSafetyDescription
-{
+.spaceSafetyDescription{
 	font-family: open_sansregular;
 	color: #4e5d60;	
 	font-size: 18px;
 	width:709px;
 	margin:0 auto;
-	padding-bottom: 125px;
 }
-.spaceSafetyDescription .verify
-{
-	color: #4e5d60;
-	font-weight: bold;
+.amountPerMonth{
+	position: absolute;
+	font-family: rajdhanimedium; 
+	color: #222059;
+	font-size: 24px;
+    height: 213px;
+    width: 213px;
+   	background-color: #ef3f37;
+    border-radius: 50%;
+    bottom: -106px;
+    left: 50%;
+    margin-left: -106px;
+    padding-top: 70px;
+    text-align: center;
 }
-.subscriptionSection
-{
+.subscriptionCost{
+	    color: #FFF;
+    font-size: 30px;
+}
+.subscriptionSection{
+	position: relative;
 	background-image: url(../img/subscribeBanner.jpg);
 	height: 235px;
 	background-size: cover;
 }
-.subscription
-{
-	position: relative;
-}
-.subscriptionDetails
-{
-	position: absolute;
-	background-color: #ef3f37;
-	width:213px;
-	height: 213px;
-	border-radius: 50%;
-	top:130px;
-	left:460px;
-}
-.subscriptionDetails .amountPerMonth
-{
-	color: #FFF;
-	font-size: 30px;
-	margin:70px 15px;
-	line-height: 32px;
-}
-.subscriptionDetails .subscriptionTitle
-{
-	font-family: rajdhanimedium; 
-	color: #222059;
-	font-size: 24px;
-}
-.membership h3
-{
-	font-family:rajdhanimedium; 
+.membership{
 	padding-top: 142px;
+}
+.membership h3{
+	font-family:rajdhanimedium; 
 	font-size: 24px;
 	color: #323232;
 	margin-bottom: 20px;
 }
-.membershipDetails
-{
+.membershipDetails{
 	margin-bottom: 52px;
 }
-.memberContent
-{
+.memberContent{
 	width:770px;
 	margin:0 auto;
 }
-.memberContent .tryItForFree
-{
+.memberContent .tryItForFree{
 	padding:20px 54px;
 	font-size: 22px;
 }
-.memberContent .noCreditCard
-{
+.memberContent .noCreditCard{
 	margin-bottom: 55px;
 	color: #556569;
 	font-size: 14px;
 }
 
-
-.membershipDetails li::before
-{
+.membershipDetails li::before{
 	content: "";
 	background-image: url(../img/spritesImage.png);
 	background-repeat: no-repeat;
@@ -243,8 +211,7 @@ ul
 	float: left;
 	margin-right: 20px;
 }
-.membershipDetails li
-{
+.membershipDetails li{
 	font-family:open_sansregular;
 	float: left;
 	font-size: 14px;
@@ -252,113 +219,92 @@ ul
 	width:375px;
 	min-height: 70px;
 }
-.verifySection
-{
+.verifySection{
+	padding-top: 80px;
 	background-color: #01284f;
 	color: #fff;
 }
-.verifySection .tablet
-{
+.verifySection .tablet{
 	background-image: url(../img/smallTablet.png);
 	width:537px;
 	height: 374px;
 	margin: 0 auto 80px;
 	display: block;
 }
-.VerifyDetails
-{
+.VerifyDetails{
 	margin-bottom: 75px;
 }
-.verifySection h2
-{
+.verifySection h2{
 	font-family: rajdhanisemibold;
-	padding-top: 80px;
 	margin-bottom: 65px;
 	font-size: 36px;
 }
-.verifyList h4
-{
+.verifyList h4{
 	font-size: 18px;
 	font-family:open_sansbold;
 }
-.verifyList .VerifyContent
-{
-	display: inline-block;
-	width:472px;
-	margin-top: 12px;
-}
-.verifyList p
-{
+.verifyList p{
 	font-family:open_sansbold;
 	font-size: 14px;
 	width: 470px;
 }
-.verifyList li
-{
+.verifyList li{
+	position: relative;
 	min-height: 60px;
 	margin-bottom: 75px;
+	padding-left: 80px;
 }
-.verifyList li::before
-{
+.verifyList li::before{
+	position: absolute;
 	content: "";
 	background-image: url(../img/spritesImage.png);
 	background-repeat: no-repeat;
 	display: block;
-	float: left;
 }
-.verifyList .minimumRisk::before
-{
+.verifyList .minimumRisk::before{
 	background-position:0 -222px;
 	width: 59px;
 	height: 60px;
-	margin-right: 15px;
+	margin: -10px 0 0 -80px;
 }
-.verifyList .decisionMaking::before
-{
+.verifyList .decisionMaking::before{
 	background-position: 0 -179px;
 	width: 56px;
 	height: 45px;
-	margin-right: 15px;
+	margin: -10px 0 0 -80px;
 }
-.verifyList .avoidFraud::before
-{
+.verifyList .avoidFraud::before{
 	background-position: 0 -281px;
 	width: 56px;
 	height: 56px;
-	margin-right: 15px;
+	margin: -10px 0 0 -80px;
 }
-.verifyList .documentEfforts::before
-{
+.verifyList .documentEfforts::before{
 	background-position: 0 -52px;
 	width: 55px;
 	height: 59px;
-	margin-right: 15px;
+	margin: -10px 0 0 -80px;
 }
-.verifyList .facilitateCompliance::before
-{
+.verifyList .facilitateCompliance::before{
 	background-position: 0 0;
 	width: 60px;
 	height: 53px;
-	margin-right: 15px;
+	margin: -10px 0 0 -80px;
 }
-.verifyList .changeRegulations::before
-{
+.verifyList .changeRegulations::before{
 	background-position: 0 -116px;
 	width: 50px;
 	height: 55px;
-	margin-right: 15px;
+	margin: -10px 0 0 -80px;
 }
-.footer ul
-{
+.footer ul{
 	padding: 35px 0;
 }
-.footer li
-{
+.footer li{
 	float: left;
 	margin-left: 15px;
 }
-.footer a
-{
+.footer a{
 	font-family:open_sansregular;
 	text-decoration: none;
 	font-size: 14px;
