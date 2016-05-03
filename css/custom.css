@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url('../fonts/titilliumweb-bold-webfont.eot');
+    src: url('../fonts/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-bold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-bold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-bold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'titillium_websemibold';
+    src: url('../fonts/titilliumweb-semibold-webfont.eot');
+    src: url('../fonts/titilliumweb-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-semibold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-semibold-webfont.svg#titillium_websemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.panel-heading{
+	background-color: #F5F4EE;
+}
+.accordionTitle a{
+	color: #3f5061;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+.panel-heading .accordion-toggle:after
+ {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    color: blue;
+}
+.panel-heading .accordion-toggle.collapsed:after
+{
+    content: "\e080";
+}
+ul,li,p,h1,h2,h3,h4,h5,h6
+{
+	padding: 0;
+	margin:0;
+}
+ul{
+	list-style-type: none;
+}
+h2{
+	font-size: 36px;
+}
+h3{
+	font-size: 28px;
+}
+span{
+	font-size: 16px;
+}
+.firstWraper{
+	background-color:#19232d;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: 300;
+	position: relative;
+}
+.secondWraper{
+	background-color: #FFF;
+}
+.subMenuLeft{
+	position: relative;
+}
+.subMenuLeft li
+{
+	float: left;
+}
+.subMenuRight li
+{
+	float: left;
+}
+.subMenuLeft a
+{
+	text-decoration: none;
+	display: block;
+	color: #627588;
+	padding:10px;
+}
+.brand
+{
+	background: url(../img/logo.png) no-repeat;
+	width:97px; 
+	height:55px;
+	display: block;
+}
+.firstWraper ul a:hover
+{
+	color: #FFF;
+	background-color: #01a451;
+}
+.subMenuRight a
+{
+	display: block;
+	color: #FFF;
+	padding:10px;
+	text-decoration: none;
+}
+.navbar
+{
+	margin:0;
+}
+.search
+{
+	background-image: url(../img/magnifyGlass.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 55px;
+}
+.headerMenu li:first-child
+{
+	border-left:1px solid #ededed;
+}
+.headerMenu li
+{
+	border-right:1px solid #ededed;
+}
+.headerMenu li:hover
+{
+	background-color: #eeeeee;
+}
+.headerMenu a
+{
+	display: block;
+	color: #19232d;
+    font-weight: 600;
+    padding:25px 10px;
+}
+.headerMenu .clear
+{
+	padding:0;
+}
+.NFHSLogo
+{
+	position: absolute;
+	background-image: url('../img/NFHSLogo.png');
+	width:190px;
+	background-repeat: no-repeat;
+	height: 123px;
+}
+.banner
+{
+	background-image: url('../img/banner.jpg');
+	height: 443px;
+	margin-bottom: 60px;
+}
+
+.bannerContentMobileView
+{
+	display: none;
+	padding: 100px 0 0 90px;
+	font-family: arial;
+}
+.bannerContent
+{
+	padding: 100px 0 0 90px;
+	width:510px;
+	font-family: arial;
+}
+.bannerContent h2,.bannerContentMobileView h2
+{
+  color: #FFF;
+  margin-bottom: 10px;
+}
+.bannerContent p,.bannerContentMobileView p
+{
+	font-size: 14px;
+	color: #82878b;
+	margin-bottom: 30px;
+}
+.bannerContent h3,.bannerContentMobileView h3
+{
+  color:#eeeeee;
+  margin-bottom: 25px;
+  font-family: SourceSansPro, sans-serif; 
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.bannerContent .learnMore
+{
+	font-size: 18px;
+	font-family: MyriadPro;
+	border:2px;
+	border-radius: 4px;
+	background-color: #004e94;
+	padding:5px 20px;
+	color: #eeeeee;
+	display: inline-block;
+}
+.map
+{
+	background-image: url('../img/map.png');
+	background-repeat: no-repeat;
+	height: 30px;
+}
+.building
+{
+	background-image: url('../img/building.png');
+	height: 43px;	
+	background-repeat: no-repeat;
+}
+.threeHeads
+{
+	background-image: url('../img/threeHeads.png');
+	height: 30px;
+	background-repeat: no-repeat;
+}
+.courseDelieverAndCount h1
+{
+	font-size: 36px;
+	text-align: center;
+	color: #cd091d;
+	margin-bottom: 60px;
+}
+.delieveredCount
+{
+	margin-bottom: 60px;
+}
+.courseDelieverAndCount ul
+{
+	margin-bottom: 60px;
+}
+.courseDelieverAndCount .counter
+{
+	color: #82878b;
+	font-size: 28px;
+}
+.courseDelieverAndCount .countDescription{
+	font-size: 18px;
+	color: #000;
+	font-weight: 800;
+	display: inline-block;
+	vertical-align: middle;
+	width: 190px;
+}
+.courseDelieverAndCount .countPicture{
+	display: inline-block;
+	vertical-align: middle;
+	width:68px;
+	height: 45px;
+}
+.courseDelieverAndCount h3{
+	text-align: center;
+	color: #cd091d;
+	margin-bottom: 35px;
+}
+.delieveredCount li{
+	display: inline-block;
+	margin:0 15px;
+}
+.sponsers{
+	background-color: #eeeeee;
+	padding:25px 0;
+	margin-bottom: 45px;
+}
+.sponsersList{
+	width: 1170px;
+}
+.sponsersList li{
+	display: inline-block;
+	vertical-align: middle;
+	height: 65px;
+	margin:0 22px;
+}
+.advertisement{
+	width:610px;
+	height: 70px;
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+.advertisement img{
+	width:100%;
+	height: 100%;
+}
+.recommendedCourse{
+	background-image: url('../img/findCourseBackground.jpg');
+	padding:35px 0;
+	margin-bottom: 50px;
+	background-size: cover;
+}
+.recommendedCourse h2{
+	text-align: center;
+	color: #FFF;
+	font-family:titillium_webbold;
+	margin-bottom: 35px;
+}
+.nfhsSportsSpecificCourse{
+	color: #cd091d;
+	font-family: Myriad Pro Regular;
+	margin-bottom: 60px;
+}
+.nfhsSportsSpecificCourse h3{
+	font-family: titillium_webbold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.nfhsSportsSpecificCourse .viewAll{
+	float: right;
+	color:#19232d;
+	line-height: 35px;
+	font-weight: 200;
+	font-size: 14px;
+	margin:0 20px;
+}
+.nfhsSportsSpecificCourse .socialConnect{
+	color:#19232d;
+	font-family: arial;
+	text-decoration: underline;
+	display: inline-block;
+}
+.nfhsSportsSpecificCourse li{
+	position: relative;
+}
+
+.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+	display: block;
+}
+.sportsSpecificCourse{
+	height: 156px;
+}
+.sportsSpecificCourse img{
+	height: 100%;
+	width: 100%;
+}
+.nfhsSportsSpecificCourse  .sportsCourseTitle{
+	text-align: center;
+	color:rgb(0,0,0);
+	margin:0;
+	background-color: #eeeeee;
+	font-size: 16px;
+	font-family: Myriad Pro Regular;
+	padding:23px 15px;
+} 
+.sportsCourseTitle  span{
+	font-weight: bold;
+}
+.sportsCourseDetails{
+	background-color: #36414a;
+    width:100%;
+    color:rgb(255,255,255);
+}
+.sportsCoursesView a{
+	text-decoration: none;
+}
+.sportsCoursesView{
+	display: none;
+	position: absolute;
+	top:0;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	left: 15px;
+	right: 15px;
+}
+.sportsCoursesView .socialConnectList{
+	margin:39px 23px;
+}
+.socialConnectList .mail{
+	width: 22px;
+	height: 15px;
+	margin: 0px 20px;
+	background-image: url(../img/mailSmall.png);
+}
+.socialConnectList .linkedIn{
+	width: 17px;
+	height: 19px;
+	margin-right: 15px;
+	background-image: url(../img/linkedIn.png);
+}
+.socialConnectList .facebook{
+	width: 12px;
+	height: 19px;
+	margin-right: 15px;
+	background-image: url(../img/facebookSmall.png);
+}
+.socialConnectList .twitter{
+	width: 21px;
+	height: 16px;
+	margin-right: 15px;
+	background-image: url(../img/twitterSmall.png);
+}
+.socialConnectList .googlePlus{
+	width: 20px;
+	height: 16px;
+	margin-right: 15px;
+	background-image: url(../img/googlePlusSmall.png);
+}
+
+.socialConnect img{
+	height: 100%;
+	width: 100%;
+}
+.sportsCoursesView .viewCourses{
+	display: inline-block;
+	padding:6px;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgb(0,0,0);
+	border: 1px solid #FFF;
+	border-radius: 3px;
+	margin: 73px;
+	font-family: Myriad Pro Regular;
+}
+.sportsCoursesView .sportsCoursesTitle{
+	text-align: center;
+	padding:0 15px;
+	color:rgb(255,255,255);
+	margin-bottom: 30px;
+	font-size: 16px;
+	font-family: Myriad Pro Regular;
+}
+.sportsCourseDetails .completionValue{
+	display: inline-block;	
+	padding:15px;
+	background-color: #000;
+}
+.sportsCourseDetails .completionScore{
+	background-color: #36414a;
+	padding:10px;
+}
+.nfhsCoreCourse {
+	margin-bottom: 40px;
+}
+.nfhsCoreCourse h2{
+	font-family: titillium_webbold;
+	color: #cd091d;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.nfhsCoreCourse li{
+	margin-bottom: 30px;
+}
+.fundamentalCoaching{
+	position: relative;
+	width:460px;
+	height: 287px;
+}
+.fundamentalCoachingDetails{
+	position:absolute;
+	background-color: #36414a;
+	bottom: 0;
+	padding:15px 0;
+	width:100%;
+	opacity: 0.9;
+}
+.fundamentalCoachingDetails p{
+	text-align: center;
+	color: #FFF;
+}
+.fundamentalCoachingDetails .coreCourseTitle{
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-family: arial;
+}
+.fundamentalCoachingDetails .coreCourseScore{
+	color:#aaaaaa;
+	font-size: 12px;
+	font-family: arial;
+}
+.fundamentalCoaching img{
+	width: 100%;
+	height: 100%;
+}
+footer{
+	padding-top:40px;
+	background-color: #19232d;
+}
+.first{
+	color: #FFF;
+	font-size: 13px;
+}
+.subNav li{
+	margin-bottom: 18px;
+}
+.subNav{
+	padding-top:20px;
+}
+.subNav a{
+	color: #3f5061;
+	font-size: 13px;
+	text-decoration: none;
+}
+.footer ul:first-child{
+	border-left: none;
+}
+.socialMedia{
+	float: left;
+}
+.footer>ul{
+	float: left;
+}
+.socialMedia .latestTweet{
+	width:255px;
+	background-color: #31475a;
+	color: #fff;
+	padding: 20px;
+	font-family: Myriad Pro Regular;
+	border: 1px solid #31475a;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.connectToSocialList a{
+	display: block;
+}
+.connectToSocialList .facebookConnect{
+	width:12px;
+	height: 22px;
+}
+.connectToSocialList li{
+	margin:0 10px;
+	display: inline-block;
+    vertical-align: middle;
+}
+.connectToSocialList .youTubeConnect{
+	width:30px;
+	height: 29px;
+}
+.connectToSocialList .twitterConnect{
+	width:21px;
+	height: 19px;
+}
+.connectToSocialList img{
+	width:100%;
+	height: 100%;
+}
+.latestTweet h4{
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.latestTweet .tweet{
+	margin-bottom: 10px;
+}
+.latestTweet p{
+	font-size: 12px;
+}
+.copyright{
+	background-color: #000;
+}
+.copyright p{
+	padding:5px;
+	text-align: center;
+	color: #3f5061;
+}
+@keyframes hvr-pulse-shrink {
+  to {
+    transform: scale(0.7);
+  }
+}
+
+.hvr-pulse-shrink {
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-shrink:hover
+{
+  animation-name: hvr-pulse-shrink;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes hvr-wobble-vertical{
+  16.65% {
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    transform: translateY(1px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hvr-wobble-vertical {
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-vertical:hover{
+  animation-name: hvr-wobble-vertical;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@media (max-width: 992px)
+{
+	.connectToSocialList{
+		margin-bottom: 12px;
+	}
+	.recommendedCourse select,.recommendedCourse button{
+		width:300px;
+		margin:0 auto;
+		margin-bottom: 20px;
+		display: block;
+	}
+	.nfhsSportsSpecificCourse li{
+		margin-bottom: 20px;
+	}
+	.fundamentalCoaching{
+		position: relative;
+		width:350px;
+		height:250px;
+	}
+	.nfhsCoreCourse{
+		margin-bottom: 0;
+	}
+	.viewAll{
+		float: right;
+		text-decoration: none;
+	}
+}
+@media (max-width: 768px)
+{
+	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+		display: none;
+	}
+	h2{
+		font-size: 24px;
+	}
+	.fundamentalCoaching{
+		position: relative;
+		width:290px;
+		height: 260px;
+	}
+	.nfhsSportsSpecificCourse li{
+		margin-bottom: 20px;
+	}
+	.nfhsSportsSpecificCourse h3{
+		font-size: 22px;
+	}
+	.viewAll{
+		display: none;
+	}
+	.nfhsCoreCourse{
+		margin-bottom: 15px;
+	}
+	.fundamentalCoachingDetails .coreCourseTitle{
+		font-size: 17px;
+	}
+	.courseDelieverAndCount ul{
+		margin-bottom: 0;
+	}
+	.recommendedCourse select,.recommendedCourse button{
+		margin-bottom: 12px;
+	}
+	.recommendedCourse select,.recommendedCourse button{
+		width: 100%;
+	}
+	.courseDelieverAndCount .counter{
+		display: block;
+		font-size: 20px;
+	}
+	.sponsers,.advertisement{
+		margin-bottom: 0;
+		overflow: hidden;
+	}
+	.sponsers{
+		overflow: hidden;
+	}
+	.advertisement img{
+		width: 320px;
+		height: 70px;
+		margin:0;
+	}
+	.subMenuLeft{
+		display: none;
+	}
+	.courseDelieverAndCount h3{
+		font-size: 24px;
+	}
+	.bannerDetails{
+		background-color: #19232d;
+		margin-bottom: 60px;
+	}
+	.bannerContentMobileView{
+		display: block;
+		padding:30px;
+	}
+	.courseDelieverAndCount li{
+		margin-bottom: 30px;
+	}
+	.courseDelieverAndCount h1{
+		font-size: 24px;
+	}
+	.bannerContentMobileView .learnMore{
+		font-size: 18px;
+		font-family: MyriadPro;
+		border:2px solid #004e94;
+		border-radius: 4px;
+		background-color: #004e94;
+		padding:5px 20px;
+		color: #eeeeee;
+		display: inline-block;
+	}
+	.bannerContent{
+		display: none;
+	}
+	.banner{
+		background-position: -600px 0;
+		margin:0;
+	}
+	.socialMedia .latestTweet{
+		width: 100%;
+	}
+	.connectToSocialList{
+		width:100%;
+		margin:0 auto;
+	}
+}
