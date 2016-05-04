@@ -31,6 +31,9 @@
     font-weight: normal;
     font-style: normal;
 }
+.bannerPicture{
+	float: right;
+}
 .panel-heading{
 	background-color: #F5F4EE;
 }
@@ -45,16 +48,15 @@
 	width: 1000px;
 	margin:0 auto;
 }
-.accordion-toggle:after
+.accordion-toggle:before
  {
     font-family: 'Glyphicons Halflings';
-    content: "\e073";
-    float: right;
+    content: "\e080";
     color:#000;
 }
-.accordion-toggle.collapsed:after
+.accordion-toggle.collapsed:before
 {
-    content: "\e072";
+    content: "\e114";
 }
 .customHeading
 {
@@ -178,36 +180,33 @@ span{
 }
 .banner
 {
-	background-image: url('../img/banner.jpg');
-	height: 443px;
+	background-image: url('../img/patternBlock.png');
 	margin-bottom: 60px;
+	overflow: hidden;
 }
 
-.bannerContentMobileView
-{
-	display: none;
-	padding: 100px 0 0 90px;
-	font-family: arial;
-}
 .bannerContent
 {
-	padding: 100px 0 0 90px;
-	width:510px;
+	padding: 100px 0 0 0px;
+	width:450px;
 	font-family: arial;
+	float: left;
 }
-.bannerContent h2,.bannerContentMobileView h2
+.bannerContent h2
 {
-  color: #FFF;
-  margin-bottom: 10px;
+   font-size: 30px;
+   color: #FFF;
+   margin-bottom: 10px;
 }
-.bannerContent p,.bannerContentMobileView p
+.bannerContent p
 {
 	font-size: 14px;
 	color: #82878b;
 	margin-bottom: 30px;
 }
-.bannerContent h3,.bannerContentMobileView h3
+.bannerContent h3
 {
+  font-size: 24px;
   color:#eeeeee;
   margin-bottom: 25px;
   font-family: SourceSansPro, sans-serif; 
@@ -224,6 +223,7 @@ span{
 	padding:5px 20px;
 	color: #eeeeee;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 .map
 {
@@ -291,14 +291,11 @@ span{
 	padding:25px 0;
 	margin-bottom: 45px;
 }
-.sponsersList{
-	width: 1040px;
-}
 .sponsersList li{
 	display: inline-block;
 	vertical-align: middle;
 	height: 65px;
-	margin:0 22px;
+	margin:0 15px;
 }
 
 .advertisement{
@@ -531,9 +528,9 @@ footer{
 {
 	float: left;
 	width:150px;
-	margin:0 10px;
+	margin:0 10px 0 0;
 	min-height: 228px;
-	border-right: 1px solid #ededed;
+	border-right: 1px solid #3f5061;
 }
 .footer>ul{
 	float: left;
@@ -648,6 +645,24 @@ footer{
 }
 @media (max-width: 992px)
 {
+	.bannerPicture{
+		float: none;
+		margin: 0px auto;
+		width: 490px;
+	}
+	.bannerContent{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.footerNav>li{
+		width: 130px;
+		margin: 0px 10px 0 0;
+	}
+	.recommendedCourse h2
+	{
+		font-size: 24px;
+	}
 	.customHeading{
 		display: block;
 	}
@@ -703,9 +718,33 @@ footer{
 		float: right;
 		text-decoration: none;
 	}
+	.footerNav{
+		float: none;
+		width: 560px;
+		margin: 0 auto;
+	}
+	.socialMedia{
+		float: none;
+	}
+	@keyframes marquee {
+	    0%   { transform: translate(0, 0); }
+	    100% { transform: translate(-100%, 0); }
+	}
+	.marquee {
+	    margin: 0 auto;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    box-sizing: border-box;
+	    animation: marquee 25s linear infinite;
+	    width: 720px;
+	}
 }
 @media (max-width: 768px)
 {
+	.recommendedCourse h2
+	{
+		font-size: 20px;
+	}
 	.footerNav>li
 	{
 		margin:0;
@@ -724,7 +763,7 @@ footer{
 	    100% { transform: translate(-100%, 0); }
 	}
 	.marquee {
-	    width: 1050px;
+	    width: 1040px;
 	    margin: 0 auto;
 	    overflow: hidden;
 	    white-space: nowrap;
@@ -755,8 +794,9 @@ footer{
 	.nfhsSportsSpecificCourse h3{
 		font-size: 22px;
 	}
-	.viewAll{
+	.accordionTitle .viewAll{
 		display: none;
+		background-color: red;
 	}
 	.nfhsCoreCourse{
 		margin-bottom: 15px;
@@ -796,32 +836,12 @@ footer{
 	.courseDelieverAndCount h3{
 		font-size: 24px;
 	}
-	.bannerDetails{
-		background-color: #19232d;
-		margin-bottom: 60px;
-	}
-	.bannerContentMobileView{
-		display: block;
-		padding:30px;
-	}
+	
 	.courseDelieverAndCount li{
 		margin-bottom: 30px;
 	}
 	.courseDelieverAndCount h1{
 		font-size: 24px;
-	}
-	.bannerContentMobileView .learnMore{
-		font-size: 18px;
-		font-family:titillium_webregular;
-		border:2px solid #004e94;
-		border-radius: 4px;
-		background-color: #004e94;
-		padding:4px 20px;
-		color: #eeeeee;
-		display: inline-block;
-	}
-	.bannerContent{
-		display: none;
 	}
 	.banner{
 		background-position: -600px 0;
