@@ -8,7 +8,17 @@
          url('../fonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('../fonts/titilliumweb-regular-webfont.eot');
+    src: url('../fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'titillium_websemibold';
@@ -27,19 +37,36 @@
 .accordionTitle a{
 	color: #3f5061;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: none;
 }
-.panel-heading .accordion-toggle:after
+.footerSection
+{
+	width: 1000px;
+	margin:0 auto;
+}
+.accordion-toggle:after
  {
     font-family: 'Glyphicons Halflings';
-    content: "\e114";
+    content: "\e073";
     float: right;
-    color: blue;
+    color:#000;
 }
-.panel-heading .accordion-toggle.collapsed:after
+.accordion-toggle.collapsed:after
 {
-    content: "\e080";
+    content: "\e072";
+}
+.customHeading
+{
+	display: none;
+}
+.panel
+{
+	border:none;
+}
+.customPanelBody
+{
+	border-top:none;
 }
 ul,li,p,h1,h2,h3,h4,h5,h6
 {
@@ -88,10 +115,11 @@ span{
 }
 .brand
 {
-	background: url(../img/logo.png) no-repeat;
-	width:97px; 
-	height:55px;
+	background: url(../img/NFHSLogoNew.png) no-repeat;
+	width:88px; 
+	height:35px;
 	display: block;
+	margin: 8px 0;
 }
 .firstWraper ul a:hover
 {
@@ -113,8 +141,9 @@ span{
 {
 	background-image: url(../img/magnifyGlass.png);
 	background-repeat: no-repeat;
-	background-position: center;
-	height: 55px;
+	background-position: left center;
+	height: 40px;
+	margin-left: 15px;
 }
 .headerMenu li:first-child
 {
@@ -188,7 +217,7 @@ span{
 .bannerContent .learnMore
 {
 	font-size: 18px;
-	font-family: MyriadPro;
+	font-family:titillium_webregular;
 	border:2px;
 	border-radius: 4px;
 	background-color: #004e94;
@@ -263,7 +292,7 @@ span{
 	margin-bottom: 45px;
 }
 .sponsersList{
-	width: 1170px;
+	width: 1040px;
 }
 .sponsersList li{
 	display: inline-block;
@@ -271,14 +300,12 @@ span{
 	height: 65px;
 	margin:0 22px;
 }
+
 .advertisement{
-	width:610px;
 	height: 70px;
-	margin:0 auto;
 	margin-bottom: 50px;
 }
 .advertisement img{
-	width:100%;
 	height: 100%;
 }
 .recommendedCourse{
@@ -426,7 +453,7 @@ span{
 }
 .sportsCourseDetails .completionScore{
 	background-color: #36414a;
-	padding:10px;
+	padding:7px;
 }
 .nfhsCoreCourse {
 	margin-bottom: 40px;
@@ -442,7 +469,6 @@ span{
 }
 .fundamentalCoaching{
 	position: relative;
-	width:460px;
 	height: 287px;
 }
 .fundamentalCoachingDetails{
@@ -471,6 +497,7 @@ span{
 	width: 100%;
 	height: 100%;
 }
+
 footer{
 	padding-top:40px;
 	background-color: #19232d;
@@ -496,18 +523,30 @@ footer{
 .socialMedia{
 	float: left;
 }
+.footerNav
+{
+	float: left;
+}
+.footerNav>li
+{
+	float: left;
+	width:150px;
+	margin:0 10px;
+	min-height: 228px;
+	border-right: 1px solid #ededed;
+}
 .footer>ul{
 	float: left;
 }
 .socialMedia .latestTweet{
-	width:255px;
+	width:300px;
 	background-color: #31475a;
 	color: #fff;
 	padding: 20px;
 	font-family: Myriad Pro Regular;
 	border: 1px solid #31475a;
 	border-radius: 5px;
-	margin-bottom: 30px;
+	margin:0 auto 30px;
 }
 .connectToSocialList a{
 	display: block;
@@ -607,9 +646,40 @@ footer{
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
 }
-
 @media (max-width: 992px)
 {
+	.customHeading{
+		display: block;
+	}
+	.panel{
+		border: 1px solid transparent;
+	}
+	.customPanelBody{
+		border-top: 1px solid #DDD;
+	}
+	.delieverDetails{
+		width:690px;
+		margin:0 auto;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #b03060;
+	    height: 3px;
+	}
+	.customNavigation,.customNav{
+		margin: 0;
+		padding:0;
+	}
+	.customNavigation li{
+		text-align: center;
+		background-color: #f3f3f3;
+		border-top: 1px solid #ddd;
+	}
+	.customNavigation a
+	{
+		font-weight: bold;
+		color: #000;
+		text-align: left;
+	}
 	.connectToSocialList{
 		margin-bottom: 12px;
 	}
@@ -624,7 +694,6 @@ footer{
 	}
 	.fundamentalCoaching{
 		position: relative;
-		width:350px;
 		height:250px;
 	}
 	.nfhsCoreCourse{
@@ -637,6 +706,39 @@ footer{
 }
 @media (max-width: 768px)
 {
+	.footerNav>li
+	{
+		margin:0;
+		border:0;
+	}
+	.socialMedia{
+		float: none;
+	}
+	.footerNav{
+		float: none;
+		width: 300px;
+		margin: 0 auto;
+	}
+	@keyframes marquee {
+	    0%   { transform: translate(0, 0); }
+	    100% { transform: translate(-100%, 0); }
+	}
+	.marquee {
+	    width: 1050px;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    box-sizing: border-box;
+	    animation: marquee 25s linear infinite;
+	}
+	.formControl{
+		width: 255px;
+		margin:0 auto;
+	}
+	.delieverDetails{
+		width:300px;
+		margin:0 auto;
+	}
 	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
 		display: none;
 	}
@@ -645,7 +747,6 @@ footer{
 	}
 	.fundamentalCoaching{
 		position: relative;
-		width:290px;
 		height: 260px;
 	}
 	.nfhsSportsSpecificCourse li{
@@ -668,6 +769,7 @@ footer{
 	}
 	.recommendedCourse select,.recommendedCourse button{
 		margin-bottom: 12px;
+		width:200px;
 	}
 	.recommendedCourse select,.recommendedCourse button{
 		width: 100%;
@@ -710,11 +812,11 @@ footer{
 	}
 	.bannerContentMobileView .learnMore{
 		font-size: 18px;
-		font-family: MyriadPro;
+		font-family:titillium_webregular;
 		border:2px solid #004e94;
 		border-radius: 4px;
 		background-color: #004e94;
-		padding:5px 20px;
+		padding:4px 20px;
 		color: #eeeeee;
 		display: inline-block;
 	}
@@ -724,12 +826,5 @@ footer{
 	.banner{
 		background-position: -600px 0;
 		margin:0;
-	}
-	.socialMedia .latestTweet{
-		width: 100%;
-	}
-	.connectToSocialList{
-		width:100%;
-		margin:0 auto;
 	}
 }
