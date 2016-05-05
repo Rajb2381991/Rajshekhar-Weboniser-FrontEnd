@@ -187,7 +187,7 @@ span{
 
 .bannerContent
 {
-	padding: 100px 0 0 0px;
+	margin-top: 100px;
 	width:450px;
 	font-family: arial;
 	float: left;
@@ -260,8 +260,8 @@ span{
 }
 .courseDelieverAndCount .counter
 {
-	color: #82878b;
-	font-size: 28px;
+	color: #cd091d;
+	font-size: 30px;
 }
 .courseDelieverAndCount .countDescription{
 	font-size: 18px;
@@ -281,6 +281,8 @@ span{
 	text-align: center;
 	color: #cd091d;
 	margin-bottom: 35px;
+	color: #82878b;
+	font-size: 28px;
 }
 .delieveredCount li{
 	display: inline-block;
@@ -738,9 +740,15 @@ footer{
 	    animation: marquee 25s linear infinite;
 	    width: 720px;
 	}
+	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+		display:none;
+	}
 }
 @media (max-width: 768px)
 {
+	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+		display:none;
+	}
 	.recommendedCourse h2
 	{
 		font-size: 20px;
