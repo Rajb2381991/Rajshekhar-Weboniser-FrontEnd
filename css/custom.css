@@ -31,44 +31,60 @@
     font-weight: normal;
     font-style: normal;
 }
+.coreCourseContent{
+	max-width: 420px;
+	margin: 0px auto;
+}
+.nfhsCoursesSection1 h3,.nfhsCoursesSection2 h3{
+	color: #cd091d;
+	font-size: 28px;
+	text-align: center;
+	text-decoration: none;
+	font-family: titillium_webbold;
+	margin-bottom: 25px;
+	padding:10px 0;
+	background-color: #ddd;
+	border:3px solid #ddd;
+	border-radius: 7px;
+	cursor: pointer;
+}
+.nfhsCoursesSection1 h3:before,.nfhsCoursesSection2 h3:before{
+	font-family: "Glyphicons Halflings";
+	content: "\e080";
+	margin:5px;
+	color:#000;
+}
+.nfhsSportsSpecificCourse,.electiveCourseContent{
+	display: none;
+}
+.navbar-default .navbar-nav > li > a{
+		color: #000;	
+	}
+.customNavigation li{
+	padding:8px 0;
+	border-right: 1px solid #ededed;
+}
+.customNavigation li:hover{
+	background-color: #eeeeee;
+}
+.customNavigation li:first-child{
+	border-left: 1px solid #ededed;
+}
+.customNavigation a{
+	font-size: 16px;
+	color: #19232d;
+	padding:30px 18px;
+	font-family: titillium_webbold;
+	text-transform: uppercase;
+}
 .bannerPicture{
 	float: right;
-}
-.panel-heading{
-	background-color: #F5F4EE;
-}
-.accordionTitle a{
-	color: #3f5061;
-	font-weight: bold;
-	font-size: 14px;
-	text-decoration: none;
+	max-width: 465px;
 }
 .footerSection
 {
 	width: 1000px;
 	margin:0 auto;
-}
-.accordion-toggle:before
- {
-    font-family: 'Glyphicons Halflings';
-    content: "\e080";
-    color:#000;
-}
-.accordion-toggle.collapsed:before
-{
-    content: "\e114";
-}
-.customHeading
-{
-	display: none;
-}
-.panel
-{
-	border:none;
-}
-.customPanelBody
-{
-	border-top:none;
 }
 ul,li,p,h1,h2,h3,h4,h5,h6
 {
@@ -83,9 +99,6 @@ h2{
 }
 h3{
 	font-size: 28px;
-}
-span{
-	font-size: 16px;
 }
 .firstWraper{
 	background-color:#19232d;
@@ -121,12 +134,12 @@ span{
 	width:88px; 
 	height:35px;
 	display: block;
-	margin: 8px 0;
+	margin: 10px 0 0 12px;
 }
 .firstWraper ul a:hover
 {
 	color: #FFF;
-	background-color: #01a451;
+	background-color: #000;
 }
 .subMenuRight a
 {
@@ -138,13 +151,14 @@ span{
 .navbar
 {
 	margin:0;
+	background-color: #FFF;
 }
 .search
 {
 	background-image: url(../img/magnifyGlass.png);
 	background-repeat: no-repeat;
 	background-position: left center;
-	height: 40px;
+	height: 50px;
 	margin-left: 15px;
 }
 .headerMenu li:first-child
@@ -166,67 +180,58 @@ span{
     font-weight: 600;
     padding:25px 10px;
 }
-.headerMenu .clear
-{
+.headerMenu .clear{
 	padding:0;
 }
-.NFHSLogo
-{
+.NFHSLogo{
 	position: absolute;
 	background-image: url('../img/NFHSLogo.png');
-	width:190px;
+	width:180px;
 	background-repeat: no-repeat;
 	height: 123px;
 }
-.banner
-{
+.banner{
 	background-image: url('../img/patternBlock.png');
 	margin-bottom: 60px;
 	overflow: hidden;
 }
-
-.bannerContent
-{
+.bannerContent{
 	margin-top: 100px;
-	width:450px;
 	font-family: arial;
 	float: left;
+	width:475px;
 }
 .bannerContent h2
 {
    font-size: 30px;
    color: #FFF;
-   margin-bottom: 10px;
+   font-family: titillium_webbold;
+   margin-bottom: 12px;
 }
-.bannerContent p
-{
+.bannerContent p{
 	font-size: 14px;
 	color: #82878b;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 }
-.bannerContent h3
-{
-  font-size: 24px;
+.bannerContent h3{
+  font-size: 28px;
   color:#eeeeee;
-  margin-bottom: 25px;
-  font-family: SourceSansPro, sans-serif; 
+  margin-bottom: 28px;
+  font-family:titillium_webregular;
   text-transform: uppercase;
-  font-weight: 200;
 }
-.bannerContent .learnMore
-{
+.bannerContent .learnMore{
 	font-size: 18px;
 	font-family:titillium_webregular;
 	border:2px;
 	border-radius: 4px;
 	background-color: #004e94;
-	padding:5px 20px;
+	padding:12px 22px;
 	color: #eeeeee;
 	display: inline-block;
 	margin-bottom: 20px;
 }
-.map
-{
+.map{
 	background-image: url('../img/map.png');
 	background-repeat: no-repeat;
 	height: 30px;
@@ -249,38 +254,40 @@ span{
 	text-align: center;
 	color: #cd091d;
 	margin-bottom: 60px;
+	font-family: titillium_webbold;
 }
 .delieveredCount
 {
 	margin-bottom: 60px;
 }
-.courseDelieverAndCount ul
+.delieverDetails
 {
 	margin-bottom: 60px;
 }
 .courseDelieverAndCount .counter
 {
 	color: #cd091d;
-	font-size: 30px;
+	font-size: 28px;
+	font-family: titillium_webbold;
 }
 .courseDelieverAndCount .countDescription{
-	font-size: 18px;
+	font-size: 24px;
 	color: #000;
-	font-weight: 800;
 	display: inline-block;
 	vertical-align: middle;
 	width: 190px;
+	font-family: titillium_webbold;
 }
 .courseDelieverAndCount .countPicture{
 	display: inline-block;
 	vertical-align: middle;
-	width:68px;
-	height: 45px;
+	width:65px;
+	margin-right: 22px;
 }
 .courseDelieverAndCount h3{
+	font-family: titilium_webregular;
 	text-align: center;
-	color: #cd091d;
-	margin-bottom: 35px;
+	margin-bottom: 60px;
 	color: #82878b;
 	font-size: 28px;
 }
@@ -290,26 +297,30 @@ span{
 }
 .sponsers{
 	background-color: #eeeeee;
-	padding:25px 0;
+	padding:38px 0 34px 0;
 	margin-bottom: 45px;
+}
+.sponsersList{
+	text-align: center;
 }
 .sponsersList li{
 	display: inline-block;
-	vertical-align: middle;
-	height: 65px;
-	margin:0 15px;
+	margin:0 14px;
 }
-
+.sponsersList img{
+	display: inline-block;
+	vertical-align: middle;
+}
 .advertisement{
-	height: 70px;
-	margin-bottom: 50px;
+	max-width: 609px;
+	margin:0  auto 50px;
 }
 .advertisement img{
-	height: 100%;
+	width: 100%;
 }
 .recommendedCourse{
 	background-image: url('../img/findCourseBackground.jpg');
-	padding:35px 0;
+	padding:35px 0 48px 0;
 	margin-bottom: 50px;
 	background-size: cover;
 }
@@ -319,17 +330,22 @@ span{
 	font-family:titillium_webbold;
 	margin-bottom: 35px;
 }
-.nfhsSportsSpecificCourse{
+.recommendedCourse .position{
+	padding:5px 38px;
+	font-size: 18px;
+	font-family: titilium_webregular;
+	color: #eeeeee;
+}
+.nfhsSportsSpecificCourse,.electiveCourseContent{
 	color: #cd091d;
-	font-family: Myriad Pro Regular;
 	margin-bottom: 60px;
 }
-.nfhsSportsSpecificCourse h3{
+.nfhsSportsSpecificCourse h3,.electiveCourseContent h3{
 	font-family: titillium_webbold;
 	margin-bottom: 20px;
 	text-align: center;
 }
-.nfhsSportsSpecificCourse .viewAll{
+.nfhsSportsSpecificCourse .viewAll,.electiveCourseContent .viewAll{
 	float: right;
 	color:#19232d;
 	line-height: 35px;
@@ -337,17 +353,18 @@ span{
 	font-size: 14px;
 	margin:0 20px;
 }
-.nfhsSportsSpecificCourse .socialConnect{
+.nfhsSportsSpecificCourse .socialConnect,.electiveCourseContent .socialConnect{
 	color:#19232d;
 	font-family: arial;
 	text-decoration: underline;
 	display: inline-block;
+	margin: 0 5px;
 }
-.nfhsSportsSpecificCourse li{
+.nfhsSportsSpecificCourse li,.electiveCourseContent li{
 	position: relative;
 }
 
-.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+.nfhsSportsSpecificCourse li:hover .sportsCoursesView,.electiveCourseContent li:hover .sportsCoursesView{
 	display: block;
 }
 .sportsSpecificCourse{
@@ -357,14 +374,13 @@ span{
 	height: 100%;
 	width: 100%;
 }
-.nfhsSportsSpecificCourse  .sportsCourseTitle{
+.nfhsSportsSpecificCourse  .sportsCourseTitle,.electiveCourseContent .sportsCourseTitle{
 	text-align: center;
 	color:rgb(0,0,0);
 	margin:0;
 	background-color: #eeeeee;
 	font-size: 16px;
-	font-family: Myriad Pro Regular;
-	padding:23px 15px;
+	padding:27px 10px;
 } 
 .sportsCourseTitle  span{
 	font-weight: bold;
@@ -388,36 +404,32 @@ span{
 	right: 15px;
 }
 .sportsCoursesView .socialConnectList{
-	margin:39px 23px;
+	width:160px;
+	margin:0 auto;
 }
 .socialConnectList .mail{
 	width: 22px;
 	height: 15px;
-	margin: 0px 20px;
 	background-image: url(../img/mailSmall.png);
 }
 .socialConnectList .linkedIn{
 	width: 17px;
 	height: 19px;
-	margin-right: 15px;
 	background-image: url(../img/linkedIn.png);
 }
 .socialConnectList .facebook{
 	width: 12px;
 	height: 19px;
-	margin-right: 15px;
 	background-image: url(../img/facebookSmall.png);
 }
 .socialConnectList .twitter{
 	width: 21px;
 	height: 16px;
-	margin-right: 15px;
 	background-image: url(../img/twitterSmall.png);
 }
 .socialConnectList .googlePlus{
 	width: 20px;
 	height: 16px;
-	margin-right: 15px;
 	background-image: url(../img/googlePlusSmall.png);
 }
 
@@ -426,7 +438,8 @@ span{
 	width: 100%;
 }
 .sportsCoursesView .viewCourses{
-	display: inline-block;
+	display: block;
+	width:130px;
 	padding:6px;
 	background-color: #fff;
 	font-weight: bold;
@@ -434,16 +447,14 @@ span{
 	color: rgb(0,0,0);
 	border: 1px solid #FFF;
 	border-radius: 3px;
-	margin: 73px;
-	font-family: Myriad Pro Regular;
+	margin: 59px auto;
 }
 .sportsCoursesView .sportsCoursesTitle{
 	text-align: center;
-	padding:0 15px;
+	padding:27px 10px;
 	color:rgb(255,255,255);
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	font-size: 16px;
-	font-family: Myriad Pro Regular;
 }
 .sportsCourseDetails .completionValue{
 	display: inline-block;	
@@ -453,28 +464,26 @@ span{
 .sportsCourseDetails .completionScore{
 	background-color: #36414a;
 	padding:7px;
-}
-.nfhsCoreCourse {
-	margin-bottom: 40px;
+	font-size: 12px;
 }
 .nfhsCoreCourse h2{
 	font-family: titillium_webbold;
 	color: #cd091d;
 	text-align: center;
+	font-size: 28px;
 	margin-bottom: 20px;
 }
-.nfhsCoreCourse li{
-	margin-bottom: 30px;
+.nfhsCoreCourse ul{
+	margin-bottom: 80px;
 }
 .fundamentalCoaching{
 	position: relative;
-	height: 287px;
 }
 .fundamentalCoachingDetails{
 	position:absolute;
 	background-color: #36414a;
 	bottom: 0;
-	padding:15px 0;
+	padding:14px 0;
 	width:100%;
 	opacity: 0.9;
 }
@@ -485,7 +494,8 @@ span{
 .fundamentalCoachingDetails .coreCourseTitle{
 	margin-bottom: 5px;
 	font-size: 18px;
-	font-family: arial;
+	color: #FFF;
+	font-family:titillium_websemibold;
 }
 .fundamentalCoachingDetails .coreCourseScore{
 	color:#aaaaaa;
@@ -521,6 +531,7 @@ footer{
 }
 .socialMedia{
 	float: left;
+	margin-left: 40px;
 }
 .footerNav
 {
@@ -530,9 +541,12 @@ footer{
 {
 	float: left;
 	width:150px;
-	margin:0 10px 0 0;
 	min-height: 228px;
-	border-right: 1px solid #3f5061;
+	border-left: 1px solid #3f5061;
+	padding-left: 25px;
+}
+.footerNav>li:first-child{
+	border:none;
 }
 .footer>ul{
 	float: left;
@@ -542,7 +556,6 @@ footer{
 	background-color: #31475a;
 	color: #fff;
 	padding: 20px;
-	font-family: Myriad Pro Regular;
 	border: 1px solid #31475a;
 	border-radius: 5px;
 	margin:0 auto 30px;
@@ -589,6 +602,12 @@ footer{
 	padding:5px;
 	text-align: center;
 	color: #3f5061;
+}
+.collapse{
+	display: block;
+}
+.advertisementTwo{
+	margin-bottom: 32px;
 }
 @keyframes hvr-pulse-shrink {
   to {
@@ -647,16 +666,41 @@ footer{
 }
 @media (max-width: 992px)
 {
+	.courseDelieverAndCount .countPicture{
+		margin: 0;
+	}
+	.banner .container{
+		padding: 0;
+		width: 100%;
+	}
+	.bannerContent{
+		margin:0;
+		float: none;
+		padding: 30px 15px 20px;
+		background-color: #19232d;
+		width:100%;
+		text-align: center;
+	}
+
+	.socialMedia{
+		float: left;
+		margin: 0;
+	}	
+	.footerNav > li{
+		margin-bottom: 20px;
+	}
+	.courseDelieverAndCount .countDescription{
+		text-align: center;
+	}
+	.sponsers{
+		overflow-x:auto;
+	}
 	.bannerPicture{
 		float: none;
 		margin: 0px auto;
 		width: 490px;
 	}
-	.bannerContent{
-		float: none;
-		text-align: center;
-		width: 100%;
-	}
+	
 	.footerNav>li{
 		width: 130px;
 		margin: 0px 10px 0 0;
@@ -665,18 +709,9 @@ footer{
 	{
 		font-size: 24px;
 	}
-	.customHeading{
-		display: block;
-	}
-	.panel{
-		border: 1px solid transparent;
-	}
-	.customPanelBody{
-		border-top: 1px solid #DDD;
-	}
 	.delieverDetails{
 		width:690px;
-		margin:0 auto;
+		margin:0 auto 60px;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 	    background-color: #b03060;
@@ -691,11 +726,12 @@ footer{
 		background-color: #f3f3f3;
 		border-top: 1px solid #ddd;
 	}
-	.customNavigation a
-	{
+	.customNavigation a{
 		font-weight: bold;
-		color: #000;
 		text-align: left;
+	}
+	.navbar-default .navbar-nav > li > a{
+		color: #000;	
 	}
 	.connectToSocialList{
 		margin-bottom: 12px;
@@ -706,12 +742,15 @@ footer{
 		margin-bottom: 20px;
 		display: block;
 	}
-	.nfhsSportsSpecificCourse li{
+	select
+	{
+		cursor: pointer;
+	}
+	.nfhsSportsSpecificCourse li,.electiveCourseContent li{
 		margin-bottom: 20px;
 	}
 	.fundamentalCoaching{
 		position: relative;
-		height:250px;
 	}
 	.nfhsCoreCourse{
 		margin-bottom: 0;
@@ -725,36 +764,72 @@ footer{
 		width: 560px;
 		margin: 0 auto;
 	}
-	.socialMedia{
-		float: none;
-	}
-	@keyframes marquee {
-	    0%   { transform: translate(0, 0); }
-	    100% { transform: translate(-100%, 0); }
-	}
+	
 	.marquee {
 	    margin: 0 auto;
 	    overflow: hidden;
 	    white-space: nowrap;
 	    box-sizing: border-box;
 	    animation: marquee 25s linear infinite;
-	    width: 720px;
+	    width: 1060px;
 	}
 	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+		display:none;
+	}
+	.electiveCourseContent li:hover .sportsCoursesView{
 		display:none;
 	}
 }
-@media (max-width: 768px)
-{
-	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
-		display:none;
+
+@media (min-width: 768px){
+	.nfhsSportsSpecificCourse,.electiveCourseContent{
+		display: block;
 	}
-	.recommendedCourse h2
-	{
+	.nfhsCoursesSection1 h3,.nfhsCoursesSection2 h3{
+		border:none;
+		background-color: #FFF;
+	}
+	.nfhsCoursesSection1 h3::before,.nfhsCoursesSection2 h3::before{
+		display: none;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.advertisementTwo{
+		margin-bottom: 32px;
+	}
+	.bannerContent h2{
+		margin-bottom: 18px;
+		font-size: 24px;
+	}
+	.bannerContent h3{
+		display: none;
+	}
+	.nfhsCoreCourse h2{
+		margin-bottom: 26px;
+		font-size: 24px;
+	}
+	.courseDelieverAndCount .counter{
+		display: block;
+	}
+	.courseDelieverAndCount .countPicture{
+		margin-right: 10px;
+	}
+	.courseDelieverAndCount .countDescription{
+		text-align: left;
+		font-size: 18px;
+	}
+	.firstWraper ul a:hover{
+		background-color: #01a451;
+	}
+	.collapse{
+		display: none;
+	}
+	.recommendedCourse h2{
 		font-size: 20px;
 	}
-	.footerNav>li
-	{
+	.footerNav>li{
 		margin:0;
 		border:0;
 	}
@@ -764,14 +839,10 @@ footer{
 	.footerNav{
 		float: none;
 		width: 300px;
-		margin: 0 auto;
+		margin: 0 auto 28px;
 	}
-	@keyframes marquee {
-	    0%   { transform: translate(0, 0); }
-	    100% { transform: translate(-100%, 0); }
-	}
-	.marquee {
-	    width: 1040px;
+	.marquee{
+		width:1060px;
 	    margin: 0 auto;
 	    overflow: hidden;
 	    white-space: nowrap;
@@ -786,28 +857,30 @@ footer{
 		width:300px;
 		margin:0 auto;
 	}
-	.nfhsSportsSpecificCourse li:hover .sportsCoursesView{
+	.nfhsSportsSpecificCourse li:hover .sportsCoursesView,.electiveCourseContent li:hover .sportsCoursesView{
 		display: none;
 	}
 	h2{
 		font-size: 24px;
 	}
+	.nfhsCoursesSection2{
+		margin-bottom: 48px;
+	}
+	.electiveCourseContent{
+		margin-bottom: 0;
+	}
+	.nfhsCoreCourse ul{
+		margin-bottom: 52px;
+	}
 	.fundamentalCoaching{
 		position: relative;
-		height: 260px;
+		margin-bottom: 16px;
 	}
-	.nfhsSportsSpecificCourse li{
+	.nfhsSportsSpecificCourse li,.electiveCourseContent li{
 		margin-bottom: 20px;
 	}
-	.nfhsSportsSpecificCourse h3{
+	.nfhsSportsSpecificCourse h3,.electiveCourseContent h3{
 		font-size: 22px;
-	}
-	.accordionTitle .viewAll{
-		display: none;
-		background-color: red;
-	}
-	.nfhsCoreCourse{
-		margin-bottom: 15px;
 	}
 	.fundamentalCoachingDetails .coreCourseTitle{
 		font-size: 17px;
@@ -823,26 +896,20 @@ footer{
 		width: 100%;
 	}
 	.courseDelieverAndCount .counter{
-		display: block;
-		font-size: 20px;
+		color: #cd091d;
+		font-size: 24px;
 	}
 	.sponsers,.advertisement{
 		margin-bottom: 0;
-		overflow: hidden;
 	}
 	.sponsers{
-		overflow: hidden;
-	}
-	.advertisement img{
-		width: 320px;
-		height: 70px;
-		margin:0;
+		overflow-x:auto;
 	}
 	.subMenuLeft{
 		display: none;
 	}
 	.courseDelieverAndCount h3{
-		font-size: 24px;
+		font-size: 20px;
 	}
 	
 	.courseDelieverAndCount li{
@@ -850,9 +917,23 @@ footer{
 	}
 	.courseDelieverAndCount h1{
 		font-size: 24px;
+		padding-top:30px;
 	}
 	.banner{
 		background-position: -600px 0;
 		margin:0;
+	}
+	.bannerPicture img{
+		width: 100%;
+	}
+	.bannerPicture{
+		width:auto;
+	}
+	.bannerContent p{
+		width: auto;
+		text-align: center;
+	}
+	.socialMedia .latestTweet{
+		margin-bottom:15px;
 	}
 }
