@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url('../fonts/titilliumweb-bold-webfont.eot');
+    src: url('../fonts/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-bold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-bold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-bold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('../fonts/titilliumweb-regular-webfont.eot');
+    src: url('../fonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titillium_websemibold';
+    src: url('../fonts/titilliumweb-semibold-webfont.eot');
+    src: url('../fonts/titilliumweb-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/titilliumweb-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/titilliumweb-semibold-webfont.woff') format('woff'),
+         url('../fonts/titilliumweb-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/titilliumweb-semibold-webfont.svg#titillium_websemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul,li,p,h1,h2,h3,h4,h5,h6,label
+{
+    padding: 0;
+    margin:0;
+}
+ul{
+    list-style-type: none;
+}
+.navbar-default .navbar-nav > li > a{
+        color: #000;    
+    }
+.customNavigation li{
+    padding:8px 0;
+    border-right: 1px solid #ededed;
+}
+.customNavigation li:hover{
+    background-color: #eeeeee;
+}
+.customNavigation li:first-child{
+    border-left: 1px solid #ededed;
+}
+.customNavigation a{
+    font-size: 16px;
+    color: #19232d;
+    padding:30px 18px;
+    font-family: titillium_webbold;
+    text-transform: uppercase;
+}
+.banner{
+    background-image: url(../img/bannerBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 63px;
+    margin-bottom: 42px;
+    height: 263px;
+}
+.bannerContent h1{
+    margin-bottom: 16px;
+    color: #FFF;
+}
+.bannerContent h3{
+    color: #FFF;
+}
+.filterCoursesInDetail{
+    padding:0 20px;
+}
+.coursesSection{
+    margin-bottom: 32px;
+}
+.filterCoursesSection{
+    background-color:#f8f8f8;
+    border:2px solid #ededed;
+}
+.stateSection .stateTitle{
+    font-size: 15px;
+    font-family: titilium_webbold;
+    color: #19232d;
+    line-height: 23px;
+    margin-bottom: 12px;
+    display: block;
+}
+.searchBox{
+    width:450px;
+}
+.searchBoxContent .input-group-addon{
+    background: white !important; 
+}
+.searchBoxContent .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.searchBoxContent button{
+    border:0;
+    background:transparent;
+}
+.glyphicon{
+    color: #ccc;
+}
+.stateSection{
+    padding:20px;
+    border-bottom: 1px solid #ededed;
+}
+.stateSection select{
+    height:30px;
+}
+.customSelectTag{
+    width:205px;
+    height: 28px;
+    display: block;   
+    border:1px solid #ccc;
+}
+.recommendedSection{
+    padding:20px;
+    border-bottom: 1px solid #ededed;
+}
+.recommendedForm li{
+    padding-top: 13px;
+    list-style-type: none;
+}
+label{
+    color: #666666;
+    font-size: 12px;
+    font-family: "arial regular";
+    font-weight: 400;
+    line-height: 14px;
+}
+.recommendedForm input{
+    margin-right: 7px;
+}
+.recommendedForm span:first-child{
+    padding:0;
+}
+.categorySection{
+    padding: 22px 20px 20px;
+    border-bottom: 1px solid #ededed;
+}
+.breakLine{
+    padding:20px 0; 
+    border-bottom:1px solid #ededed;
+}
+.categoryForm{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+}
+.subCategoryForm{
+    padding-top: 20px;
+}
+.categorySection input{
+    margin-right: 7px;
+}
+.categorySection li{
+    padding-top: 13px;
+    list-style-type: none;
+}
+.categorySection span:first-child{
+    padding:0;
+}
+.categoryTitle{
+    color: #19232d;
+    margin-bottom: 13px;
+    font-size: 15px;
+    display: block;
+    font-family: titilium_websemibold;    
+}
+.recommendedTitle{
+    color: #19232d;
+    margin-bottom: 14px;
+    font-size: 15px;
+    display: block;
+    line-height: 21px;
+    font-family: titilium_websemibold;
+}
+.fiterCourseContent{
+    padding:21px 22px 20px 21px;
+    border-bottom: 1px solid #ededed;
+}
+.fiterCourseContent .filterCourseTitle{
+    font-family: titilium_webbold;
+    color: #cd091d;
+    font-size:21px;
+}
+.fiterCourseContent .reset{
+    color: #004e94;
+    font-family: "arial regular";
+    font-size: 12px;
+    text-align: right;
+    line-height: 23px;
+    text-decoration: underline;
+    display: block;
+}
+.fiterCourseContent .reset:hover{
+    text-decoration: none;
+    color: #F00;
+}
+.courseDetailsUpperWraper {
+    margin-left: 0;
+}
+.courseDetailsUpperWraper{
+    padding: 20px 15px 13px;
+}
+.courseDetailsUpperWraper h2{
+    color: #000;
+    font-size: 21px;
+    font-family: titilium_websemibold;
+    margin-bottom: 12px;
+}
+.courseDetailsUpperWraper h3{
+    color: #000;
+    font-size: 16px;
+    font-family:"arial regular";
+    margin-bottom: 13px;
+}
+.courseDetailsUpperWraper h3:before{
+    content: "";
+    background-image: url(../img/spriteImages.png);
+
+}
+.courseDetailsUpperWraper .fundamentalCoreCourse:before{   
+    content: "";
+    width: 15px;
+    height: 24px;
+    background-position: 0 -313px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.courseDetailsUpperWraper .fundamentalCoreCourseReward:before{   
+    content: "";
+    width: 18px;
+    height: 23px;
+    background-position: 0 -22px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.courseDetailsUpperWraper .fundamentalCoreCourseElective:before{   
+    content: "";
+    width: 15px;
+    height: 23px;
+    background-position: 0 -313px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.courseDetailsUpperWraper .fundamentalCoreCourseBall:before{   
+    content: "";
+    width: 19px;
+    height: 22px;
+    background-position: 0 0;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.courseDetailsLowerWraper{
+    background-color: #36414a;    
+}
+.courseDetailsLowerWraper .completionValue{
+    padding:6px 15px;
+    color: #FFF;
+    font-size: 17px;
+    font-family: "arial regular";
+    background-color: #000;
+    display: inline-block;
+}
+.freeText{
+    color: #FFF;
+    background-color: #cd091d;
+    padding:6px 15px;
+    font-size: 17px;
+    font-family: "arial regular";
+    display: inline-block;
+}
+.courseDetailsLowerWraper .completionScore{
+    color: #82878b;
+    font-size: 12px;
+    font-family: "arial regular";
+    display: inline-block;
+}
+.courseDetailsWraper{
+    width:628px;
+}
+.courseContent{
+    margin-bottom: 32px;
+}
+.courseListImageWraper{
+    width: 219px;
+    height:174px;
+}
+.courseListImageWraper img{
+    width: 100%;
+    height: 100%;
+}
+.socialMediasInCourses .mail{
+    width: 17px;
+    height: 11px;
+    background-image: url(../img/messageBlack.png);
+}
+.socialMediasInCourses .linkedIn{
+    width: 14px;
+    height: 15px;
+    background-image: url(../img/linkedInBlack.png);
+}
+.socialMediasInCourses .facebook{
+    width: 10px;
+    height: 15px;
+    background-image: url(../img/facebookBlack.png);
+}
+.socialMediasInCourses .twitter{
+    width: 17px;
+    height: 14px;
+    background-image: url(../img/twitterBlack.png);
+}
+.socialMediasInCourses .googlePlus{
+    width: 17px;
+    height: 14px;
+    background-image: url(../img/googlePlusBlack.png);
+}
+
+.hoverSocialMediasInCourses .mail{
+    width: 17px;
+    height: 11px;
+    background-image: url(../img/messageBlack.png);
+}
+.hoverSocialMediasInCourses .mail:hover{
+    width: 17px;
+    height: 11px;
+    background-image: url(../img/mailWhite.png);
+}
+.hoverSocialMediasInCourses .linkedIn{
+    width: 14px;
+    height: 15px;
+    background-image: url(../img/linkedInBlack.png);
+}
+.hoverSocialMediasInCourses .linkedIn:hover{
+    width: 14px;
+    height: 15px;
+    background-image: url(../img/linkedInWhite.png);
+}
+.hoverSocialMediasInCourses .facebook{
+    width: 10px;
+    height: 15px;
+    background-image: url(../img/facebookBlack.png);
+}
+.hoverSocialMediasInCourses .facebook:hover{
+    width: 10px;
+    height: 15px;
+    background-image: url(../img/facebookWhite.png);
+}
+.hoverSocialMediasInCourses .twitter{
+    width: 17px;
+    height: 14px;
+    background-image: url(../img/twitterBlack.png);
+}
+.hoverSocialMediasInCourses .twitter:hover{
+    width: 17px;
+    height: 14px;
+    background-image: url(../img/twitterWhite.png);
+}
+
+.hoverSocialMediasInCourses .googlePlus{
+    width: 17px;
+    height: 14px;
+    background-image: url(../img/googlePlusBlack.png);
+}
+
+.hoverSocialMediasInCourses .googlePlus:hover{
+    width: 17px;
+    height: 14px;
+    background-image: url(../img/googlePlusWhite.png);
+}
+
+.socialConnect,.hoverSocialConnect{
+    color:#19232d;
+    font-family: arial;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: middle;
+    margin:9px 10px;
+}
+.socialConnect img,.hoverSocialConnect img{
+    height: 100%;
+    width: 100%;
+}
+.navbar-form{
+    margin:0;
+    padding: 0;
+}
+.coursesList li{
+    background-color: #f8f8f8;
+}
+.coursesList .courseListMainWraper{
+    margin-bottom: 20px;
+    position: relative;
+}
+.hoverCourseWraper{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.hoverCourseHeading{
+    color: #FFF;
+    font-size: 21px;
+    font-family: titilium_websemibold;
+    margin-bottom: 12px;
+}
+.hoverCourseSubWraper{
+    display: none;
+    background-color: #36414a;
+    opacity: 0.8;
+    width:847px;
+    height:174px;
+}
+.courseListMainWraper:hover .hoverCourseSubWraper{
+    display: block;
+}
+.hoverCourseSubWraper h2{
+    padding-top:20px;
+    margin-left:235px;
+    color: #FFF;
+}
+.hoverCourseSubWraper .hoverViewCourse:hover{
+    color: #F00;
+    border-radius:0;
+}
+.hoverCourseSubWraper .hoverViewCourse{
+    color: #36414a;
+    padding:7px 12px;
+    text-decoration: none;
+    background-color: #FFF;
+    margin:14px 0 0 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+}
+.hoverCourseSubWraper .hoverSocialMediasInCourses{
+    margin-top:84px;
+}
+.footerSection
+{
+    width: 1000px;
+    margin:0 auto;
+}
+.recommendedLinks{
+    margin-bottom: 13px;
+}
+.recommendedLinks li{
+    float: left;
+}
+.recommendedLinks a{
+   background-color: #eeeeee;
+   margin-right: 5px;
+   padding:4px 5px;
+   border-radius: 4px;
+   color: #4d4d4d;
+   font-size: 12px;
+   font-family: "arial regular";
+}
+.recommendedLinks a:hover{
+    color: #F00;
+    text-decoration: none;
+}
+.firstWraper{
+    background-color:#19232d;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+}
+.secondWraper{
+    background-color: #FFF;
+}
+.subMenuLeft a:hover{
+    color: #FFF;
+    background-color: #000;
+}
+.subMenuRight a:hover{
+    color: #FFF;
+    background-color: #01a451;
+}
+.subMenuLeft{
+    position: relative;
+}
+.subMenuLeft li{
+    float: left;
+}
+.subMenuRight li{
+    float: left;
+}
+.subMenuLeft a{
+    text-decoration: none;
+    display: block;
+    color: #627588;
+    padding:10px;
+}
+.brand{
+    background: url(../img/NFHSLogoNew.png) no-repeat;
+    width:88px; 
+    height:35px;
+    display: block;
+    margin: 10px 0 0 12px;
+}
+.subMenuRight a{
+    display: block;
+    color: #FFF;
+    padding:10px;
+    text-decoration: none;
+}
+.navbar{
+    margin:0;
+    background-color: #FFF;
+}
+.search{
+    background-image: url(../img/magnifyGlass.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 50px;
+    margin-left: 15px;
+}
+.headerMenu li:first-child{
+    border-left:1px solid #ededed;
+}
+.headerMenu li{
+    border-right:1px solid #ededed;
+}
+.headerMenu li:hover{
+    background-color: #eeeeee;
+}
+.headerMenu a{
+    display: block;
+    color: #19232d;
+    font-weight: 600;
+    padding:25px 10px;
+}
+.headerMenu .clear{
+    padding:0;
+}
+.NFHSLogo{
+    position: absolute;
+    background-image: url('../img/NFHSLogo.png');
+    width:180px;
+    background-repeat: no-repeat;
+    height: 123px;
+}
+
+footer{
+    padding-top:40px;
+    background-color: #19232d;
+}
+.first{
+    color: #FFF;
+    font-size: 13px;
+}
+.subNav li{
+    margin-bottom: 18px;
+}
+.subNav{
+    padding-top:20px;
+}
+.subNav a{
+    color: #3f5061;
+    font-size: 13px;
+    text-decoration: none;
+}
+.footer ul:first-child{
+    border-left: none;
+}
+.socialMedia{
+    float: right;
+}
+.footerNav
+{
+    float: left;
+    margin-bottom: 20px;
+}
+.footerNav>li
+{
+    float: left;
+    width:180px;
+    min-height: 228px;
+    border-left: 1px solid #3f5061;
+    padding-left: 25px;
+}
+.footerNav>li:first-child{
+    border:none;
+}
+.footer>ul{
+    float: left;
+}
+.socialMedia .latestTweet{
+    width:300px;
+    background-color: #31475a;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #31475a;
+    border-radius: 5px;
+    margin:0 auto 30px;
+}
+.connectToSocialList a{
+    display: block;
+}
+.connectToSocialList .facebookConnect{
+    width:12px;
+    height: 22px;
+}
+.connectToSocialList li{
+    margin:0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.connectToSocialList .youTubeConnect{
+    width:30px;
+    height: 29px;
+}
+.connectToSocialList .twitterConnect{
+    width:21px;
+    height: 19px;
+}
+.connectToSocialList img{
+    width:100%;
+    height: 100%;
+}
+.latestTweet h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.latestTweet .tweet{
+    margin-bottom: 10px;
+}
+.latestTweet p{
+    font-size: 12px;
+}
+.copyright{
+    background-color: #000;
+}
+.copyright p{
+    padding:5px;
+    text-align: center;
+    color: #3f5061;
+}
+.collapse{
+    display: block;
+}
+
+@media (max-width: 992px)
+{
+     .socialMedia{
+        float: left;
+        margin: 0;
+    }   
+    .footerNav > li{
+        margin-bottom: 20px;
+    }
+    .footerNav>li{
+        width: 130px;
+        margin: 0px 10px 0 0;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #b03060;
+        height: 3px;
+    }
+    .customNavigation,.customNav{
+        margin: 0;
+        padding:0;
+    }
+    .customNavigation li{
+        text-align: center;
+        background-color: #f3f3f3;
+        border-top: 1px solid #ddd;
+    }
+    .customNavigation a{
+        font-weight: bold;
+        text-align: left;
+    }
+    .navbar-default .navbar-nav > li > a{
+        color: #000;    
+    }
+    .connectToSocialList{
+        margin-bottom: 12px;
+    }
+    .footerNav{
+        float: none;
+        width: 560px;
+        margin: 0 auto;
+    }    
+}
+
+@media (max-width: 767px){
+    .bannerContent h1{
+        font-size: 24px;
+    }
+    .bannerContent h3{
+        font-size: 20px;
+    }
+    .firstWraper ul a:hover{
+        background-color: #01a451;
+    }
+    .collapse{
+        display: none;
+    }
+    .footerNav>li{
+        margin:0;
+        border:0;
+    }
+    .socialMedia{
+        float: none;
+    }
+    .footerNav{
+        float: none;
+        width: 300px;
+        margin: 0 auto 28px;
+    }
+    .subMenuLeft{
+        display: none;
+    }
+    .socialMedia .latestTweet{
+        margin-bottom:15px;
+    }
+}
