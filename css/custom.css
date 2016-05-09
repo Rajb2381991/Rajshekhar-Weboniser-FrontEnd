@@ -228,14 +228,14 @@ label{
 }
 .courseDetailsUpperWraper h3:before{
     content: "";
-    background-image: url(../img/spriteImages.png);
+    background-image: url(../img/spriteImage.png);
 
 }
 .courseDetailsUpperWraper .fundamentalCoreCourse:before{   
     content: "";
     width: 15px;
     height: 24px;
-    background-position: 0 -313px;
+    background-position: 0 -48px;
     display:inline-block;
     vertical-align: middle;
     margin-right: 15px;
@@ -243,7 +243,7 @@ label{
 .courseDetailsUpperWraper .fundamentalCoreCourseReward:before{   
     content: "";
     width: 18px;
-    height: 23px;
+    height: 24px;
     background-position: 0 -22px;
     display:inline-block;
     vertical-align: middle;
@@ -253,7 +253,7 @@ label{
 .courseDetailsUpperWraper .fundamentalCoreCourseElective:before{   
     content: "";
     width: 15px;
-    height: 23px;
+    height: 24px;
     background-position: 0 -313px;
     display:inline-block;
     vertical-align: middle;
@@ -303,7 +303,7 @@ label{
 }
 .courseListImageWraper{
     width: 219px;
-    height:173px;
+    height:172px;
 }
 .courseListImageWraper img{
     width: 100%;
@@ -408,8 +408,11 @@ label{
     background-color: #f8f8f8;
 }
 .coursesList .courseListMainWraper{
-    margin-bottom: 20px;
     position: relative;
+    margin-top: 20px;
+}
+.coursesList .courseListMainWraper:first-child{
+    margin-top: 0;   
 }
 .hoverCourseWraper{
     position: absolute;
