@@ -108,6 +108,9 @@ ul{
     border:0;
     background:transparent;
 }
+.searchBoxContent input{
+    height: 31px;
+}
 .glyphicon{
     color: #ccc;
 }
@@ -229,7 +232,6 @@ label{
 .courseDetailsUpperWraper h3:before{
     content: "";
     background-image: url(../img/spriteImage.png);
-
 }
 .courseDetailsUpperWraper .fundamentalCoreCourse:before{   
     content: "";
@@ -309,30 +311,34 @@ label{
     width: 100%;
     height: 100%;
 }
+.socialMediasInCourses a{
+    content: "";
+    background-image: url(../img/spriteImage.png);
+}
 .socialMediasInCourses .mail{
-    width: 17px;
+    width: 19px;
     height: 11px;
-    background-image: url(../img/messageBlack.png);
+    background-position: 0 -134px;
 }
 .socialMediasInCourses .linkedIn{
-    width: 14px;
-    height: 15px;
-    background-image: url(../img/linkedInBlack.png);
+    width: 18px;
+    height: 17px;
+    background-position: 0 -151px;
 }
 .socialMediasInCourses .facebook{
-    width: 10px;
-    height: 15px;
-    background-image: url(../img/facebookBlack.png);
+    width: 12px;
+    height: 16px;
+    background-position: 0 -171px;
 }
 .socialMediasInCourses .twitter{
-    width: 17px;
-    height: 14px;
-    background-image: url(../img/twitterBlack.png);
+    width: 18px;
+    height: 15px;
+    background-position: 0 -192px;
 }
 .socialMediasInCourses .googlePlus{
-    width: 17px;
-    height: 14px;
-    background-image: url(../img/googlePlusBlack.png);
+    width: 18px;
+    height: 17px;
+    background-position: 0 -213px;
 }
 
 .hoverSocialMediasInCourses .mail{
@@ -455,7 +461,8 @@ label{
     display: inline-block;
 }
 .hoverCourseSubWraper .hoverSocialMediasInCourses{
-    margin-top:84px;
+    margin-top:83px;
+    margin-right: 3px;
 }
 .footerSection
 {
@@ -583,6 +590,9 @@ footer{
     color: #3f5061;
     font-size: 13px;
     text-decoration: none;
+}
+.subNav a:hover{
+    color: #FFF;
 }
 .footer ul:first-child{
     border-left: none;
