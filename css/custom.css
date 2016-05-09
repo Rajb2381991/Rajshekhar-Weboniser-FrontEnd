@@ -224,6 +224,7 @@ label{
     font-size: 16px;
     font-family:"arial regular";
     margin-bottom: 13px;
+    line-height: 22px;
 }
 .courseDetailsUpperWraper h3:before{
     content: "";
@@ -277,6 +278,7 @@ label{
     font-family: "arial regular";
     background-color: #000;
     display: inline-block;
+    line-height: 24px;
 }
 .freeText{
     color: #FFF;
@@ -291,6 +293,7 @@ label{
     font-size: 12px;
     font-family: "arial regular";
     display: inline-block;
+    line-height: 24px;
 }
 .courseDetailsWraper{
     width:628px;
@@ -300,7 +303,7 @@ label{
 }
 .courseListImageWraper{
     width: 219px;
-    height:174px;
+    height:173px;
 }
 .courseListImageWraper img{
     width: 100%;
@@ -468,6 +471,7 @@ label{
    padding:4px 5px;
    border-radius: 4px;
    color: #4d4d4d;
+   border:1px solid #ccc;
    font-size: 12px;
    font-family: "arial regular";
 }
